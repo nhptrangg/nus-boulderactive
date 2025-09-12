@@ -18,7 +18,7 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "NUS BoulderActive 2025 - Climbing Competition Singapore",
+  title: "NUS BoulderActive 2025",
   description:
     "Join the ultimate bouldering competition at NUS Singapore. Test your limits, conquer new heights, and be part of the climbing community.",
   generator: "v0.app",

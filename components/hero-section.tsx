@@ -28,7 +28,7 @@ export function HeroSection() {
           </div>
           <div className="flex items-center gap-2">
             <MapPin className="h-5 w-5" />
-            <span>NUS SPORTS & RECREATION CENTRE</span>
+            <span>City Square Mall</span>
           </div>
         </div>
 
