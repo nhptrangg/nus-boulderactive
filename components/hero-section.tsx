@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Calendar, MapPin } from "lucide-react"
+import { CountdownTimer } from "./countdown-timer"
 
 export function HeroSection() {
   return (
@@ -16,9 +17,9 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+        <h1 className="font-hero text-5xl md:text-7xl font-black mb-6 tracking-wider uppercase">
           NUS BOULDERACTIVE
-          <span className="block text-3xl md:text-5xl font-semibold text-accent mt-2">2025</span>
+          <span className="block text-3xl md:text-5xl font-black text-accent mt-2">2025</span>
         </h1>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8 text-lg">
@@ -35,6 +36,8 @@ export function HeroSection() {
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed">
           Push your limits. Conquer new heights. Join Singapore's premier bouldering competition.
         </p>
+
+        <CountdownTimer targetDate="2025-09-15T23:59:59+08:00" label="Early Bird Registration Ends" />
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-3">

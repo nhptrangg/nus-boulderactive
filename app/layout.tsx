@@ -1,20 +1,20 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Work_Sans, Open_Sans } from "next/font/google"
+import { Inter, Orbitron } from "next/font/google"
 import "./globals.css"
 
-const workSans = Work_Sans({
+const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-work-sans",
-  weight: ["400", "600", "700"],
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
 })
 
-const openSans = Open_Sans({
+const orbitron = Orbitron({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-open-sans",
-  weight: ["400", "500", "600"],
+  variable: "--font-orbitron",
+  weight: ["400", "700", "900"],
 })
 
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${workSans.variable} ${openSans.variable} antialiased`}>
+    <html lang="en" className={`${inter.variable} ${orbitron.variable} antialiased`}>
       <body className="font-sans">{children}</body>
     </html>
   )
