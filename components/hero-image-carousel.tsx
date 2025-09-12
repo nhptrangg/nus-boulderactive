@@ -3,11 +3,9 @@
 import { useEffect, useState } from "react"
 
 const heroImages = [
-  "/indoor-bouldering-competition-climbers-on-colorful.jpg",
-  "/bouldering-wall-with-dynamic-climbing-moves-and-ch.jpg",
-  "/climbing-competition-crowd-cheering-athletes-bould.jpg",
-  "/close-up-bouldering-holds-and-climbing-technique.jpg",
-  "/bouldering-gym-with-multiple-climbing-routes-and-a.jpg",
+  "/hero1.jpg",
+  "/hero2.jpg",
+  "/hero3.jpg",
 ]
 
 export function HeroImageCarousel() {
