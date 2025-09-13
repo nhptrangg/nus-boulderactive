@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react"
 
 const heroImages = [
-  "/hero1.jpg",
-  "/hero2.jpg",
-  "/hero3.jpg",
+  "/hero-1.jpg",
+  "/hero-2.jpg",
+  "/hero-3.png",
+  "/hero-4.png",
+  "/hero-5.jpg",
 ]
 
 export function HeroImageCarousel() {
