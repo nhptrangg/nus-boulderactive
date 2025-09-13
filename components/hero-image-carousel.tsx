@@ -2,13 +2,7 @@
 
 import { useEffect, useState } from "react"
 
-const heroImages = [
-  "/hero-1.jpg",
-  "/hero-2.jpg",
-  "/hero-3.png",
-  "/hero-4.png",
-  "/hero-5.jpg",
-]
+const heroImages = ["/hero-1.jpg", "/hero-2.jpg", "/hero-3.png", "/hero-4.png", "/hero-5.jpg"]
 
 export function HeroImageCarousel() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -31,6 +25,11 @@ export function HeroImageCarousel() {
           }`}
           style={{
             backgroundImage: `url('${image}')`,
+            animation:
+              index === currentImageIndex
+                ? "heroFloat 8s ease-in-out infinite, heroZoom 12s ease-in-out infinite"
+                : "none",
+            transform: "scale(1.05)",
           }}
         />
       ))}

@@ -50,30 +50,32 @@ export function Navigation() {
         </div>
 
         {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border">
-              <a href="#home" className="block px-3 py-2 text-foreground hover:text-primary transition-colors">
-                HOME
-              </a>
-              <a href="#about" className="block px-3 py-2 text-foreground hover:text-primary transition-colors">
-                ABOUT
-              </a>
-              <a href="#rules" className="block px-3 py-2 text-foreground hover:text-primary transition-colors">
-                RULES
-              </a>
-              <a href="#schedule" className="block px-3 py-2 text-foreground hover:text-primary transition-colors">
-                SCHEDULE
-              </a>
-              <a href="#location" className="block px-3 py-2 text-foreground hover:text-primary transition-colors">
-                LOCATION
-              </a>
-              <div className="px-3 py-2">
-                <Button className="w-full bg-primary hover:bg-primary/90">REGISTER</Button>
-              </div>
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border">
+            <a href="#home" className="block px-3 py-2 text-foreground hover:text-primary transition-colors">
+              HOME
+            </a>
+            <a href="#about" className="block px-3 py-2 text-foreground hover:text-primary transition-colors">
+              ABOUT
+            </a>
+            <a href="#rules" className="block px-3 py-2 text-foreground hover:text-primary transition-colors">
+              RULES
+            </a>
+            <a href="#schedule" className="block px-3 py-2 text-foreground hover:text-primary transition-colors">
+              SCHEDULE
+            </a>
+            <a href="#location" className="block px-3 py-2 text-foreground hover:text-primary transition-colors">
+              LOCATION
+            </a>
+            <div className="px-3 py-2">
+              <Button className="w-full bg-primary hover:bg-primary/90">REGISTER</Button>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   )
