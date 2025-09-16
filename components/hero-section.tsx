@@ -31,7 +31,7 @@ export function HeroSection() {
           Push your limits. Conquer new heights. Join Singapore's premier bouldering competition.
         </p>
 
-        <CountdownTimer targetDate="2025-09-15T23:59:59+08:00" label="Early Bird Registration Ends" />
+        <CountdownTimer targetDate="2025-09-17T23:59:59+08:00" label="Early Bird Registration Ends" />
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-3">

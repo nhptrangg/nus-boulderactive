@@ -12,15 +12,8 @@ export function LocationSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Map Placeholder */}
-          <div className="relative">
-            <GoogleMapsEmbed
-              apiKey="AIzaSyDWbNwlgnXPONYkYIr-g-fyLZ_r1Pkpjwk"
-              height={200}
-              width="100%"
-              mode="place"
-              q="City+Square+Mall,SG"
-            />
-          </div>
+          <div className="w-full">
+            <iframe width="100%" height="500" frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0} src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=City%20Square%20Mall+(NUS%20BoulderActive)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" /></div>
 
           {/* Location Details */}
           <div>

@@ -22,7 +22,7 @@ export function Navigation() {
                 className="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0"
               />
               <h1
-                className="text-xs sm:text-sm md:text-lg lg:text-xl font-semibold tracking-wide truncate max-w-[120px] sm:max-w-none"
+                className="text-xs sm:text-sm md:text-lg lg:text-xl font-semibold tracking-wide max-w-[120px] sm:max-w-none"
                 style={{
                   color: "#d4af37 !important",
                   WebkitTextFillColor: "#d4af37 !important",
@@ -39,17 +39,17 @@ export function Navigation() {
               <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
                 HOME
               </a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="/#about" className="text-foreground hover:text-primary transition-colors font-medium">
                 ABOUT
+              </a>
+              <a href="/#information" className="text-foreground hover:text-primary transition-colors font-medium">
+                INFORMATION
+              </a>
+              <a href="/#location" className="text-foreground hover:text-primary transition-colors font-medium">
+                LOCATION
               </a>
               <a href="/rules-and-formats" className="text-foreground hover:text-primary transition-colors font-medium">
                 RULES AND FORMATS
-              </a>
-              <a href="#schedule" className="text-foreground hover:text-primary transition-colors font-medium">
-                SCHEDULE
-              </a>
-              <a href="#location" className="text-foreground hover:text-primary transition-colors font-medium">
-                LOCATION
               </a>
               <Button className="bg-primary hover:bg-primary/90 font-semibold">REGISTER</Button>
             </div>
@@ -73,28 +73,28 @@ export function Navigation() {
               HOME
             </a>
             <a
-              href="#about"
+              href="/#about"
               className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
             >
               ABOUT
+            </a>
+            <a
+              href="/#information"
+              className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
+            >
+              INFORMATION
+            </a>
+            <a
+              href="/#location"
+              className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
+            >
+              LOCATION
             </a>
             <a
               href="/rules-and-formats"
               className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
             >
               RULES AND FORMATS
-            </a>
-            <a
-              href="#schedule"
-              className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
-            >
-              SCHEDULE
-            </a>
-            <a
-              href="#location"
-              className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
-            >
-              LOCATION
             </a>
             <div className="px-3 py-2">
               <Button className="w-full bg-primary hover:bg-primary/90 font-semibold">REGISTER</Button>

@@ -11,9 +11,6 @@ export default function RulesAndFormatsPage() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Rules and Formats</h1>
             <p className="text-lg text-muted-foreground">NUS BoulderActive 2025 Competition Rules and Regulations</p>
-            <p className="text-sm text-muted-foreground mt-2">
-              Updated as of October 2025 • Please ensure you are reading the right version
-            </p>
           </div>
 
           <div className="prose prose-lg max-w-none">
@@ -108,7 +105,7 @@ export default function RulesAndFormatsPage() {
 
               <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6">
                 <p className="text-sm font-medium text-yellow-800">
-                  <strong>Important:</strong> BA25 will not be promotional. Any competitor found to have registered and
+                  <strong>Important:</strong> Any competitor found to have registered and
                   competed in any category he/she is ineligible for will immediately be disqualified and moved to a
                   higher category; each competitor may only sign up for one category. International climbers may contact
                   the Organisers for clarification on category eligibility.

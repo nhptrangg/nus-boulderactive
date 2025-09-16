@@ -27,28 +27,28 @@ export function Footer() {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-background/80 hover:text-primary transition-colors">
+                <a href="/#home" className="text-background/80 hover:text-primary transition-colors">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-background/80 hover:text-primary transition-colors">
+                <a href="/#about" className="text-background/80 hover:text-primary transition-colors">
                   About
                 </a>
               </li>
               <li>
-                <a href="#rules" className="text-background/80 hover:text-primary transition-colors">
-                  Rules
+                <a href="/#information" className="text-background/80 hover:text-primary transition-colors">
+                  Information
                 </a>
               </li>
               <li>
-                <a href="#schedule" className="text-background/80 hover:text-primary transition-colors">
-                  Schedule
-                </a>
-              </li>
-              <li>
-                <a href="#location" className="text-background/80 hover:text-primary transition-colors">
+                <a href="/#location" className="text-background/80 hover:text-primary transition-colors">
                   Location
+                </a>
+              </li>
+              <li>
+                <a href="/rules-and-formats" className="text-background/80 hover:text-primary transition-colors">
+                  Rules
                 </a>
               </li>
             </ul>
@@ -72,7 +72,7 @@ export function Footer() {
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
           <p className="text-background/60">
-            © 2025 NUS BoulderActive. All rights reserved. |<span className="ml-2">Organized by NUS Climbing Club</span>
+            © 2025 NUS BoulderActive. All rights reserved. |<span className="ml-2">Organised by NUS</span>
           </p>
         </div>
       </div>
