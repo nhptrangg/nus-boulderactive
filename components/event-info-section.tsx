@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Calendar, Clock, Users, Camera, Trophy, Info } from "lucide-react"
+import { Calendar, Clock, Users, Camera, Trophy, Info, ExternalLink } from "lucide-react"
 import Link from "next/link"
 
 export function EventInfoSection() {
@@ -9,6 +9,40 @@ export function EventInfoSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">EVENT INFORMATION</h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <Card className="p-6 border-2 border-primary bg-primary/5">
+            <CardContent className="text-center pt-6">
+              <ExternalLink className="h-8 w-8 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4 text-primary">ClimbBuddy Live Scores</h3>
+              <p className="text-muted-foreground mb-6">View live scores and rankings during the competition</p>
+              <Button asChild className="bg-primary hover:bg-primary/90">
+                <Link href="https://climbbuddy-5b7f6.web.app/" target="_blank" rel="noopener noreferrer">
+                  View Live Scores
+                  <ExternalLink className="h-4 w-4 ml-2" />
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="p-6 border-2 border-secondary bg-secondary/5">
+            <CardContent className="text-center pt-6">
+              <Info className="h-8 w-8 text-secondary mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4 text-secondary">Competition Details</h3>
+              <p className="text-muted-foreground mb-6">View detailed rules, categories, and competition information</p>
+              <Button
+                asChild
+                variant="outline"
+                className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground bg-transparent"
+              >
+                <Link href="#" rel="noopener noreferrer">
+                  View Details
+                  <ExternalLink className="h-4 w-4 ml-2" />
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -47,7 +81,7 @@ export function EventInfoSection() {
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
               >
                 <Link target="_blank" href="https://linktr.ee/boulderactive2022" rel="noopener noreferrer">
-                SEE PREVIOUS BOULDERACTIVE PHOTOS
+                  SEE PREVIOUS BOULDERACTIVE PHOTOS
                 </Link>
               </Button>
             </CardContent>
@@ -99,53 +133,77 @@ export function EventInfoSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Day 1 */}
-            <Card className="p-6">
+            <Card className="p-6 border-l-4 border-l-primary">
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-xl text-primary">DAY 1 - QUALIFIERS</CardTitle>
-                <p className="text-sm text-muted-foreground">October 3, 2025</p>
+                <p className="text-sm text-muted-foreground font-semibold">October 3, 2025</p>
               </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="text-sm">
-                  <p className="font-semibold">• Novice Women (Qualifiers)</p>
-                  <p className="font-semibold">• Novice Men (Qualifiers)</p>
-                  <p className="font-semibold">• Intermediate Women (Qualifiers)</p>
-                  <p className="font-semibold">• Novice Women (Semi-Finals)</p>
-                  <p className="font-semibold">• Intermediate Men (Qualifiers)</p>
-                  <p className="font-semibold">• Novice Men (Semi-Finals)</p>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center p-3 bg-muted/50 rounded-lg">
+                    <span className="font-semibold text-sm">Novice Qualifiers</span>
+                    <span className="text-primary font-bold">09:00</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-muted/50 rounded-lg">
+                    <span className="font-semibold text-sm">Inter Qualifiers</span>
+                    <span className="text-primary font-bold">15:40</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-accent/10 rounded-lg border border-accent/20">
+                    <span className="font-semibold text-sm">Novice Semifinals</span>
+                    <span className="text-accent font-bold">16:30</span>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Day 2 */}
-            <Card className="p-6">
+            <Card className="p-6 border-l-4 border-l-accent">
               <CardHeader className="text-center pb-4">
-                <CardTitle className="text-xl text-primary">DAY 2 - SEMI-FINALS</CardTitle>
-                <p className="text-sm text-muted-foreground">October 4, 2025</p>
+                <CardTitle className="text-xl text-accent">DAY 2 - SEMI-FINALS</CardTitle>
+                <p className="text-sm text-muted-foreground font-semibold">October 4, 2025</p>
               </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="text-sm">
-                  <p className="font-semibold">• Open Men (Qualifiers)</p>
-                  <p className="font-semibold">• Inter Men (Semi-Finals)</p>
-                  <p className="font-semibold">• Open Women (Qualifiers)</p>
-                  <p className="font-semibold">• Inter Women (Semi-Finals)</p>
-                  <p className="font-semibold">• Team Event</p>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center p-3 bg-muted/50 rounded-lg">
+                    <span className="font-semibold text-sm">Open Qualifiers</span>
+                    <span className="text-primary font-bold">10:00</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-accent/10 rounded-lg border border-accent/20">
+                    <span className="font-semibold text-sm">Inter Semifinals</span>
+                    <span className="text-accent font-bold">11:35</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-secondary/10 rounded-lg border border-secondary/20">
+                    <span className="font-semibold text-sm">Team Event</span>
+                    <span className="text-secondary font-bold">15:50</span>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Day 3 */}
-            <Card className="p-6">
+            <Card className="p-6 border-l-4 border-l-secondary">
               <CardHeader className="text-center pb-4">
-                <CardTitle className="text-xl text-primary">DAY 3 - FINALS</CardTitle>
-                <p className="text-sm text-muted-foreground">October 5, 2025</p>
+                <CardTitle className="text-xl text-secondary">DAY 3 - FINALS</CardTitle>
+                <p className="text-sm text-muted-foreground font-semibold">October 5, 2025</p>
               </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="text-sm">
-                  <p className="font-semibold">• Open Men (Semi Finals)</p>
-                  <p className="font-semibold">• Open Women (Semi Finals)</p>
-                  <p className="font-semibold">• Novice Finals</p>
-                  <p className="font-semibold">• Intermediate Finals</p>
-                  <p className="font-semibold">• Open Finals</p>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center p-3 bg-accent/10 rounded-lg border border-accent/20">
+                    <span className="font-semibold text-sm">Open Semifinals</span>
+                    <span className="text-accent font-bold">10:00</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-secondary/10 rounded-lg border border-secondary/20">
+                    <span className="font-semibold text-sm">Novice Finals</span>
+                    <span className="text-secondary font-bold">14:00</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-secondary/10 rounded-lg border border-secondary/20">
+                    <span className="font-semibold text-sm">Inter Finals</span>
+                    <span className="text-secondary font-bold">17:00</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-secondary/20 rounded-lg border-2 border-secondary">
+                    <span className="font-bold text-sm">Open Finals</span>
+                    <span className="text-secondary font-bold text-lg">19:00</span>
+                  </div>
                 </div>
               </CardContent>
             </Card>
