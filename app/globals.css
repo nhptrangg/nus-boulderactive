@@ -133,18 +133,21 @@
   * {
     @apply border-border outline-ring/50;
   }
+
+  /* Added overflow control to prevent horizontal scrolling */
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
-  /* Updated heading styles to use Montserrat with proper weights */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-heading);
-    font-weight: 600;
+
+  /* Force navigation title color with maximum specificity */
+  nav h1 {
+    color: #d4af37 !important;
+    -webkit-text-fill-color: #d4af37 !important;
   }
 
   /* Hero section keeps Orbitron font */

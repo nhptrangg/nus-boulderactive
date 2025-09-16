@@ -10,12 +10,26 @@ export function Navigation() {
 
   return (
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <div className="flex items-center space-x-3">
-              <Image src="/logo.png" alt="NUS BoulderActive Logo" width={40} height={40} className="w-10 h-10" />
-              <h1 className="text-xl font-semibold text-primary tracking-wide">NUS BOULDERACTIVE</h1>
+          <div className="flex-shrink-0 min-w-0 flex-1 mr-2 sm:mr-4">
+            <div className="flex items-center space-x-2 sm:space-x-3 min-w-0">
+              <Image
+                src="/logo.png"
+                alt="NUS BoulderActive Logo"
+                width={40}
+                height={40}
+                className="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0"
+              />
+              <h1
+                className="text-xs sm:text-sm md:text-lg lg:text-xl font-semibold tracking-wide truncate max-w-[120px] sm:max-w-none"
+                style={{
+                  color: "#d4af37 !important",
+                  WebkitTextFillColor: "#d4af37 !important",
+                }}
+              >
+                NUS BOULDERACTIVE
+              </h1>
             </div>
           </div>
 
@@ -41,8 +55,7 @@ export function Navigation() {
             </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex-shrink-0 ml-2">
             <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
