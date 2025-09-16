@@ -42,30 +42,30 @@ export function CountdownTimer({ targetDate, label = "Early Bird Registration En
   if (isExpired) {
     return (
       <div className="bg-accent/20 backdrop-blur-sm border border-accent/30 rounded-lg p-4 mb-6">
-        <p className="text-white font-semibold text-lg">Early Bird Registration Has Ended</p>
+        <p className="text-accent font-semibold text-lg">Early Bird Registration Has Ended</p>
       </div>
     )
   }
 
   return (
     <div className="bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-lg p-4 mb-6">
-      <p className="text-white font-semibold text-sm mb-2 uppercase tracking-wide">{label}</p>
+      <p className="text-primary font-semibold text-sm mb-2 uppercase tracking-wide">{label}</p>
       <div className="flex justify-center gap-4">
         <div className="text-center">
-          <div className="text-2xl md:text-3xl font-bold text-white">{timeLeft.days}</div>
-          <div className="text-xs text-white/80 uppercase">Days</div>
+          <div className="text-2xl md:text-3xl font-bold text-primary">{timeLeft.days}</div>
+          <div className="text-xs text-primary/80 uppercase">Days</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl md:text-3xl font-bold text-white">{timeLeft.hours}</div>
-          <div className="text-xs text-white/80 uppercase">Hours</div>
+          <div className="text-2xl md:text-3xl font-bold text-primary">{timeLeft.hours}</div>
+          <div className="text-xs text-primary/80 uppercase">Hours</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl md:text-3xl font-bold text-white">{timeLeft.minutes}</div>
-          <div className="text-xs text-white/80 uppercase">Minutes</div>
+          <div className="text-2xl md:text-3xl font-bold text-primary">{timeLeft.minutes}</div>
+          <div className="text-xs text-primary/80 uppercase">Minutes</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl md:text-3xl font-bold text-white">{timeLeft.seconds}</div>
-          <div className="text-xs text-white/80 uppercase">Seconds</div>
+          <div className="text-2xl md:text-3xl font-bold text-primary">{timeLeft.seconds}</div>
+          <div className="text-xs text-primary/80 uppercase">Seconds</div>
         </div>
       </div>
     </div>

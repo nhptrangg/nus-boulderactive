@@ -36,14 +36,14 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#home" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
                 HOME
               </a>
               <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">
                 ABOUT
               </a>
-              <a href="#rules" className="text-foreground hover:text-primary transition-colors font-medium">
-                RULES
+              <a href="/rules-and-formats" className="text-foreground hover:text-primary transition-colors font-medium">
+                RULES AND FORMATS
               </a>
               <a href="#schedule" className="text-foreground hover:text-primary transition-colors font-medium">
                 SCHEDULE
@@ -69,10 +69,7 @@ export function Navigation() {
           }`}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border">
-            <a
-              href="#home"
-              className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
-            >
+            <a href="/" className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium">
               HOME
             </a>
             <a
@@ -82,10 +79,10 @@ export function Navigation() {
               ABOUT
             </a>
             <a
-              href="#rules"
+              href="/rules-and-formats"
               className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
             >
-              RULES
+              RULES AND FORMATS
             </a>
             <a
               href="#schedule"
