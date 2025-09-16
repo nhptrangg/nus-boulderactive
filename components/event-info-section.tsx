@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, Users, Camera, Trophy, Info, ExternalLink } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function EventInfoSection() {
   return (
@@ -11,10 +12,10 @@ export function EventInfoSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">EVENT INFORMATION</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <Card className="p-6 border-2 border-primary bg-primary/5">
             <CardContent className="text-center pt-6">
-              <ExternalLink className="h-8 w-8 text-primary mx-auto mb-4" />
+              <Image src="/climbbuddy.png" alt="ClimbBuddy Logo" height={40} width={40} className="h-8 w-8 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4 text-primary">ClimbBuddy Live Scores</h3>
               <p className="text-muted-foreground mb-6">View live scores and rankings during the competition</p>
               <Button asChild className="bg-primary hover:bg-primary/90">
@@ -47,8 +48,8 @@ export function EventInfoSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Date & Venue */}
-          <Card className="p-8">
-            <CardHeader className="text-center pb-6">
+          <Card className="pt-8">
+            <CardHeader className="text-center pb-2">
               <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
               <CardTitle className="text-2xl">Date & Venue</CardTitle>
             </CardHeader>
@@ -60,14 +61,13 @@ export function EventInfoSection() {
                   Join us for Singapore's premier university climbing competition featuring multiple categories and
                   formats across three exciting days.
                 </p>
-                <Button className="bg-primary hover:bg-primary/90">HOW TO GET TO CITY SQUARE MALL</Button>
               </div>
             </CardContent>
           </Card>
 
           {/* Event Photos */}
           <Card className="p-8">
-            <CardHeader className="text-center pb-6">
+            <CardHeader className="text-center pb-2">
               <Camera className="h-12 w-12 text-primary mx-auto mb-4" />
               <CardTitle className="text-2xl">Event Photos</CardTitle>
             </CardHeader>
@@ -88,41 +88,6 @@ export function EventInfoSection() {
           </Card>
         </div>
 
-        {/* Schedule Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          <Card className="text-center p-6 bg-primary text-primary-foreground">
-            <CardContent className="pt-6">
-              <Clock className="h-8 w-8 mx-auto mb-3" />
-              <h3 className="font-semibold mb-2">DAY 1 - QUALIFIERS</h3>
-              <p className="text-sm opacity-90">October 3</p>
-            </CardContent>
-          </Card>
-
-          <Card className="text-center p-6 bg-accent text-accent-foreground">
-            <CardContent className="pt-6">
-              <Users className="h-8 w-8 mx-auto mb-3" />
-              <h3 className="font-semibold mb-2">DAY 2 - SEMI-FINALS</h3>
-              <p className="text-sm opacity-90">October 4</p>
-            </CardContent>
-          </Card>
-
-          <Card className="text-center p-6 bg-secondary text-secondary-foreground">
-            <CardContent className="pt-6">
-              <Trophy className="h-8 w-8 mx-auto mb-3" />
-              <h3 className="font-semibold mb-2">DAY 3 - FINALS</h3>
-              <p className="text-sm opacity-90">October 5</p>
-            </CardContent>
-          </Card>
-
-          <Card className="text-center p-6 border-2 border-primary">
-            <CardContent className="pt-6">
-              <Calendar className="h-8 w-8 mx-auto mb-3 text-primary" />
-              <h3 className="font-semibold mb-2 text-primary">REGISTER</h3>
-              <p className="text-sm text-muted-foreground">Open Now</p>
-            </CardContent>
-          </Card>
-        </div>
-
         <div className="mt-20">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4 text-primary">DETAILED SCHEDULE</h3>
@@ -135,7 +100,7 @@ export function EventInfoSection() {
             {/* Day 1 */}
             <Card className="p-6 border-l-4 border-l-primary">
               <CardHeader className="text-center pb-4">
-                <CardTitle className="text-xl text-primary">DAY 1 - QUALIFIERS</CardTitle>
+                <CardTitle className="text-xl text-primary">DAY 1</CardTitle>
                 <p className="text-sm text-muted-foreground font-semibold">October 3, 2025</p>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -159,7 +124,7 @@ export function EventInfoSection() {
             {/* Day 2 */}
             <Card className="p-6 border-l-4 border-l-accent">
               <CardHeader className="text-center pb-4">
-                <CardTitle className="text-xl text-accent">DAY 2 - SEMI-FINALS</CardTitle>
+                <CardTitle className="text-xl text-accent">DAY 2</CardTitle>
                 <p className="text-sm text-muted-foreground font-semibold">October 4, 2025</p>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -183,7 +148,7 @@ export function EventInfoSection() {
             {/* Day 3 */}
             <Card className="p-6 border-l-4 border-l-secondary">
               <CardHeader className="text-center pb-4">
-                <CardTitle className="text-xl text-secondary">DAY 3 - FINALS</CardTitle>
+                <CardTitle className="text-xl text-secondary">DAY 3</CardTitle>
                 <p className="text-sm text-muted-foreground font-semibold">October 5, 2025</p>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -192,11 +157,11 @@ export function EventInfoSection() {
                     <span className="font-semibold text-sm">Open Semifinals</span>
                     <span className="text-accent font-bold">10:00</span>
                   </div>
-                  <div className="flex justify-between items-center p-3 bg-secondary/10 rounded-lg border border-secondary/20">
+                  <div className="flex justify-between items-center p-3 bg-secondary/20 rounded-lg border-2 border-secondary">
                     <span className="font-semibold text-sm">Novice Finals</span>
                     <span className="text-secondary font-bold">14:00</span>
                   </div>
-                  <div className="flex justify-between items-center p-3 bg-secondary/10 rounded-lg border border-secondary/20">
+                  <div className="flex justify-between items-center p-3 bg-secondary/20 rounded-lg border-2 border-secondary">
                     <span className="font-semibold text-sm">Inter Finals</span>
                     <span className="text-secondary font-bold">17:00</span>
                   </div>
@@ -213,7 +178,7 @@ export function EventInfoSection() {
           <div className="mt-16">
             <div className="text-center mb-8">
               <h4 className="text-2xl font-bold mb-4 text-primary">COMPETITION FORMATS</h4>
-              <p className="text-muted-foreground">Understanding the different competition styles</p>
+              <p className="text-muted-foreground">Understanding the different competition formats</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -224,11 +189,13 @@ export function EventInfoSection() {
                   <CardTitle className="text-lg">FLASH</CardTitle>
                 </CardHeader>
                 <CardContent className="text-sm space-y-2">
-                  <p>• Demo climb available</p>
-                  <p>• 4 problems per competitor</p>
-                  <p>• Same heat enters together</p>
-                  <p>• Can view routes beforehand</p>
-                  <p>• 4 min per route + 4 min rest</p>
+                  <ul className="list-disc flex flex-col gap-1">
+                    <li>Demo climb available</li>
+                    <li>4 problems per competitor</li>
+                    <li>Same heat enters together</li>
+                    <li>Can view routes beforehand</li>
+                    <li>4 min per route + 4 min rest</li>
+                  </ul>
                 </CardContent>
               </Card>
 
@@ -239,11 +206,13 @@ export function EventInfoSection() {
                   <CardTitle className="text-lg">ROTATION</CardTitle>
                 </CardHeader>
                 <CardContent className="text-sm space-y-2">
-                  <p>• No demo climb</p>
-                  <p>• Sent out one by one</p>
-                  <p>• All attempt problem 1 first</p>
-                  <p>• Cannot view routes beforehand</p>
-                  <p>• 4 min per route, back to isolation</p>
+                  <ul className="list-disc flex flex-col gap-1">
+                    <li>No demo climb</li>
+                    <li>Sent out one by one</li>
+                    <li>All attempt problem 1 first</li>
+                    <li>Cannot view routes beforehand</li>
+                    <li>4 min per route, back to isolation</li>
+                  </ul>
                 </CardContent>
               </Card>
 
@@ -254,11 +223,13 @@ export function EventInfoSection() {
                   <CardTitle className="text-lg">IFSC FINALS</CardTitle>
                 </CardHeader>
                 <CardContent className="text-sm space-y-2">
-                  <p>• No demo climb</p>
-                  <p>• Sent out in reverse order</p>
-                  <p>• Cannot view routes beforehand</p>
-                  <p>• 1 hour isolation</p>
-                  <p>• Top 3 each gender awarded</p>
+                  <ul className="list-disc flex flex-col gap-1">
+                    <li>No demo climb</li>
+                    <li>Sent out in reverse order</li>
+                    <li>Cannot view routes beforehand</li>
+                    <li>1 hour isolation</li>
+                    <li>Top 3 each gender awarded</li>
+                  </ul>
                 </CardContent>
               </Card>
 
@@ -269,11 +240,13 @@ export function EventInfoSection() {
                   <CardTitle className="text-lg">IFSC CONCURRENT</CardTitle>
                 </CardHeader>
                 <CardContent className="text-sm space-y-2">
-                  <p>• No demo climb</p>
-                  <p>• Sent out in reverse order</p>
-                  <p>• 2-min observation period</p>
-                  <p>• 1 hour isolation + observation</p>
-                  <p>• Return to isolation before competing</p>
+                  <ul className="list-disc flex flex-col gap-1">
+                    <li>No demo climb</li>
+                    <li>Sent out in reverse order</li>
+                    <li>2-min observation period</li>
+                    <li>1 hour isolation + observation</li>
+                    <li>Return to isolation before competing</li>
+                  </ul>
                 </CardContent>
               </Card>
             </div>

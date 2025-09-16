@@ -13,13 +13,10 @@ export function Footer() {
               inclusive climbing community.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-background/80 hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/nusboulderactive/" className="text-background/80 hover:text-primary transition-colors">
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="text-background/80 hover:text-primary transition-colors">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-background/80 hover:text-primary transition-colors">
+              <a href="mailto:boulderactivenus@gmail.com" className="text-background/80 hover:text-primary transition-colors">
                 <Mail className="h-6 w-6" />
               </a>
             </div>
@@ -67,7 +64,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <span className="text-background/80">info@nusboulderactive.sg</span>
+                <span className="text-background/80">boulderactivenus@gmail.com</span>
               </div>
             </div>
           </div>

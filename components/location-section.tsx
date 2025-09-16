@@ -71,7 +71,7 @@ export function LocationSection() {
                 <CardContent className="pt-4">
                   <Mail className="h-6 w-6 text-primary mx-auto mb-2" />
                   <p className="text-sm font-medium">Email</p>
-                  <p className="text-xs text-muted-foreground">boulderactive@gmail.com</p>
+                  <p className="text-xs text-muted-foreground">boulderactivenus@gmail.com</p>
                 </CardContent>
               </Card>
             </div>
