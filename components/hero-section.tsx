@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Calendar, MapPin } from "lucide-react"
+import Link from "next/link"
 import { CountdownTimer } from "./countdown-timer"
 import { HeroImageCarousel } from "./hero-image-carousel"
 
@@ -34,8 +35,10 @@ export function HeroSection() {
         <CountdownTimer targetDate="2025-09-17T23:59:59+08:00" label="Early Bird Registration Ends" />
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-3">
-            REGISTER NOW
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-3" asChild>
+            <Link href="http://bit.ly/NUSBA25" target="_blank">
+              REGISTER NOW
+            </Link>
           </Button>
           <Button
             size="lg"
