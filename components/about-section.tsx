@@ -13,7 +13,7 @@ export function AboutSection() {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">OUR VISION</h2>
-          <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-foreground">UNDAUNTED</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-foreground">BEYOND LIMITS</h3>
           <div className="max-w-4xl mx-auto">
             <p className="text-lg leading-relaxed mb-6">
               Founded in 2019, NUS BoulderActive has emerged as Singapore's premier bouldering competition, bringing
