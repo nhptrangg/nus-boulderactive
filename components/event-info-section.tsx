@@ -30,15 +30,15 @@ export function EventInfoSection() {
           <Card className="p-6 border-2 border-secondary bg-secondary/5">
             <CardContent className="text-center pt-6">
               <Info className="h-8 w-8 text-secondary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-secondary">Competition Details</h3>
-              <p className="text-muted-foreground mb-6">View detailed rules, categories, and competition information</p>
+              <h3 className="text-xl font-semibold mb-4 text-secondary">Competition Rules</h3>
+              <p className="text-muted-foreground mb-6">View detailed rules, categories, and format information</p>
               <Button
                 asChild
                 variant="outline"
                 className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground bg-transparent"
               >
-                <Link href="#" rel="noopener noreferrer">
-                  View Details
+                <Link href="/rules-and-formats" rel="noopener noreferrer">
+                  View Rules
                   <ExternalLink className="h-4 w-4 ml-2" />
                 </Link>
               </Button>

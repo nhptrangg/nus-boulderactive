@@ -1,4 +1,6 @@
-import { Instagram, Facebook, Mail, Phone } from "lucide-react"
+import ScrollButton from "@/components/scroll-link"
+import { Instagram, Mail } from "lucide-react"
+import Link from "next/link"
 
 export function Footer() {
   return (
@@ -27,29 +29,29 @@ export function Footer() {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/#home" className="text-background/80 hover:text-primary transition-colors">
+                <ScrollButton scrollToId="home" className="text-background/80 hover:text-primary transition-colors">
                   Home
-                </a>
+                </ScrollButton>
               </li>
               <li>
-                <a href="/#about" className="text-background/80 hover:text-primary transition-colors">
+                <ScrollButton scrollToId="about" className="text-background/80 hover:text-primary transition-colors">
                   About
-                </a>
+                </ScrollButton>
               </li>
               <li>
-                <a href="/#information" className="text-background/80 hover:text-primary transition-colors">
+                <ScrollButton scrollToId="information" className="text-background/80 hover:text-primary transition-colors">
                   Information
-                </a>
+                </ScrollButton>
               </li>
               <li>
-                <a href="/#location" className="text-background/80 hover:text-primary transition-colors">
+                <ScrollButton scrollToId="location" className="text-background/80 hover:text-primary transition-colors">
                   Location
-                </a>
+                </ScrollButton>
               </li>
               <li>
-                <a href="/rules-and-formats" className="text-background/80 hover:text-primary transition-colors">
+                <Link href="/rules-and-formats" className="text-background/80 hover:text-primary transition-colors">
                   Rules
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -59,8 +61,8 @@ export function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-2">
               <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <span className="text-background/80">+65 6516 2345</span>
+                <Instagram className="h-4 w-4" />
+                <span className="text-background/80">nusboulderactive</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />

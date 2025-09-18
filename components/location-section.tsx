@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { MapPin, Navigation, Phone, Mail } from "lucide-react"
+import { MapPin, Navigation, Phone, Mail, Instagram } from "lucide-react"
 import { GoogleMapsEmbed } from '@next/third-parties/google'
 
 export function LocationSection() {
@@ -26,7 +26,7 @@ export function LocationSection() {
                   <div>
                     <h4 className="font-semibold mb-1">Address:</h4>
                     <p className="text-muted-foreground">
-                      City Square Mall
+                      City Square Mall, Green Square
                       <br />
                       180 Kitchener Rd
                       <br />
@@ -39,29 +39,37 @@ export function LocationSection() {
                   <Navigation className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">Getting There:</h4>
+                    <div className="flex flex-col gap-2">
                     <p className="text-muted-foreground">
-                      Take MRT to Kent Ridge Station (Circle Line)
-                      <br />
-                      Bus services: 95, 96, 151, 200
-                      <br />
-                      Parking available on campus
+                      Take MRT to Farrer Park Station (North-East Line)
                     </p>
+                    <p className="text-muted-foreground">
+                      <span className="font-semibold">Bus stops:</span>
+                      <br />
+                      Before Tai Hoe Hotel, 07231 - 21, 125, 130
+                      <br />
+                      Outside Sri Srinivasa Perumal Temple, 07211 - 21, 23, 64, 65, 66, 67, 125, 130, 139, 141, 147, 857, NR6
+                    </p>
+                    <p className="text-muted-foreground">
+                      Parking available
+                    </p>
+                    </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Card className="p-4 text-center hover:shadow-lg transition-shadow">
-                <CardContent className="pt-4">
-                  <Phone className="h-6 w-6 text-primary mx-auto mb-2" />
-                  <p className="text-sm font-medium">Contact</p>
-                  <p className="text-xs text-muted-foreground">+65 6516 2345</p>
+              <Card className="text-center hover:shadow-lg transition-shadow">
+                <CardContent>
+                  <Instagram className="h-6 w-6 text-primary mx-auto mb-2" />
+                  <p className="text-sm font-medium">Instagram</p>
+                  <p className="text-xs text-muted-foreground">nusboulderactive</p>
                 </CardContent>
               </Card>
 
-              <Card className="p-4 text-center hover:shadow-lg transition-shadow">
-                <CardContent className="pt-4">
+              <Card className="text-center hover:shadow-lg transition-shadow">
+                <CardContent>
                   <Mail className="h-6 w-6 text-primary mx-auto mb-2" />
                   <p className="text-sm font-medium">Email</p>
                   <p className="text-xs text-muted-foreground">boulderactivenus@gmail.com</p>
