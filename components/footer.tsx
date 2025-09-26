@@ -44,6 +44,11 @@ export function Footer() {
                 </ScrollButton>
               </li>
               <li>
+                <ScrollButton scrollToId="schedule" className="text-background/80 hover:text-primary transition-colors">
+                  Schedule
+                </ScrollButton>
+              </li>
+              <li>
                 <ScrollButton scrollToId="location" className="text-background/80 hover:text-primary transition-colors">
                   Location
                 </ScrollButton>

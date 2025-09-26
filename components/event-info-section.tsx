@@ -88,7 +88,7 @@ export function EventInfoSection() {
           </Card>
         </div>
 
-        <div className="mt-20">
+        <div className="mt-20" id="schedule">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4 text-primary">DETAILED SCHEDULE</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -96,6 +96,8 @@ export function EventInfoSection() {
             </p>
           </div>
 
+          {/* TODO: Split based on men vs. women */}
+          {/* TODO: Need more details regarding registration time, detail time, etc. */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Day 1 */}
             <Card className="p-6 border-l-4 border-l-primary">
@@ -135,7 +137,7 @@ export function EventInfoSection() {
                   </div>
                   <div className="flex justify-between items-center p-3 bg-accent/10 rounded-lg border border-accent/20">
                     <span className="font-semibold text-sm">Inter Semifinals</span>
-                    <span className="text-accent font-bold">11:35</span>
+                    <span className="text-accent font-bold">13:00</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-secondary/10 rounded-lg border border-secondary/20">
                     <span className="font-semibold text-sm">Team Event</span>

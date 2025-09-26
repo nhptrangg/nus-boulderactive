@@ -47,13 +47,15 @@ export function Navigation() {
               <ScrollButton scrollToId="information" className="text-foreground hover:text-primary transition-colors font-medium">
                 INFORMATION
               </ScrollButton>
+              <ScrollButton scrollToId="schedule" className="text-foreground hover:text-primary transition-colors font-medium">
+                SCHEDULE
+              </ScrollButton>
               <ScrollButton scrollToId="location" className="text-foreground hover:text-primary transition-colors font-medium">
                 LOCATION
               </ScrollButton>
               <Link href="/rules-and-formats" className="text-foreground hover:text-primary transition-colors font-medium">
                 RULES AND FORMATS
               </Link>
-              <Button className="bg-primary hover:bg-primary/90 font-semibold">REGISTER</Button>
             </div>
           </div>
 
@@ -87,6 +89,12 @@ export function Navigation() {
               INFORMATION
             </ScrollButton>
             <ScrollButton
+              scrollToId="schedule"
+              className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
+            >
+              SCHEDULE
+            </ScrollButton>
+            <ScrollButton
               scrollToId="location"
               className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
             >
@@ -98,9 +106,6 @@ export function Navigation() {
             >
               RULES AND FORMATS
             </Link>
-            <div className="px-3 py-2">
-              <Button className="w-full bg-primary hover:bg-primary/90 font-semibold">REGISTER</Button>
-            </div>
           </div>
         </div>
       </div>

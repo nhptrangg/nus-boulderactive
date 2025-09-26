@@ -4,10 +4,10 @@ import { useState, useEffect } from "react"
 
 interface CountdownTimerProps {
   targetDate: string // ISO date string
-  label?: string
+  label: string
 }
 
-export function CountdownTimer({ targetDate, label = "Early Bird Registration Ends" }: CountdownTimerProps) {
+export function CountdownTimer({ targetDate, label }: CountdownTimerProps) {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -42,7 +42,7 @@ export function CountdownTimer({ targetDate, label = "Early Bird Registration En
   if (isExpired) {
     return (
       <div className="bg-accent/20 backdrop-blur-sm border border-accent/30 rounded-lg p-4 mb-6">
-        <p className="text-accent font-semibold text-lg">Early Bird Registration Has Ended</p>
+        <p className="text-accent font-semibold text-lg">NUS BoulderActive has started!</p>
       </div>
     )
   }

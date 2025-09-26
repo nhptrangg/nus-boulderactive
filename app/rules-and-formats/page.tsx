@@ -11,12 +11,13 @@ export default function RulesAndFormatsPage() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Rules and Formats</h1>
             <p className="text-lg text-muted-foreground">NUS BoulderActive 2025 Competition Rules and Regulations</p>
+            <p className="text-xs text-muted-foreground">Updated as of 27 September 2025</p>
           </div>
 
           <div className="prose prose-lg max-w-none">
             <div className="bg-card border border-border rounded-lg p-6 mb-8">
-              <p className="text-sm text-muted-foreground mb-4">
-                The rules and regulations contained herein shall be known as the BA25 Rules and shall be read in
+              <p className="text-sm text-muted-foreground">
+                The rules and regulations contained herein shall be known as the <strong>BA25 Rules</strong> and shall be read in
                 conjunction with the International Federation of Sport Climbing (IFSC) Rules and Regulations. In the
                 event of conflicts between the BA25 Rules and the IFSC Rules and Regulations, the BA25 Rules shall
                 prevail.
@@ -34,14 +35,12 @@ export default function RulesAndFormatsPage() {
                 <table className="w-full border-collapse border border-border">
                   <thead>
                     <tr className="bg-muted">
-                      <th className="border border-border p-3 text-left font-semibold">#</th>
                       <th className="border border-border p-3 text-left font-semibold">Competitive Category</th>
                       <th className="border border-border p-3 text-left font-semibold">Eligibility</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border border-border p-3">1</td>
                       <td className="border border-border p-3 font-medium">Novice</td>
                       <td className="border border-border p-3">
                         <ul className="list-disc list-inside space-y-1 text-sm">
@@ -56,7 +55,6 @@ export default function RulesAndFormatsPage() {
                       </td>
                     </tr>
                     <tr className="bg-muted/50">
-                      <td className="border border-border p-3">2</td>
                       <td className="border border-border p-3 font-medium">Intermediate</td>
                       <td className="border border-border p-3">
                         <ul className="list-disc list-inside space-y-1 text-sm">
@@ -74,7 +72,6 @@ export default function RulesAndFormatsPage() {
                       </td>
                     </tr>
                     <tr>
-                      <td className="border border-border p-3">3</td>
                       <td className="border border-border p-3 font-medium">Open</td>
                       <td className="border border-border p-3">
                         <ul className="list-disc list-inside space-y-1 text-sm">
@@ -84,14 +81,13 @@ export default function RulesAndFormatsPage() {
                       </td>
                     </tr>
                     <tr className="bg-muted/50">
-                      <td className="border border-border p-3">4</td>
-                      <td className="border border-border p-3 font-medium">Team Category</td>
+                      <td className="border border-border p-3 font-medium">Team</td>
                       <td className="border border-border p-3">
                         <ul className="list-disc list-inside space-y-1 text-sm">
-                          <li>Each team can have a maximum of 3 people.</li>
-                          <li>Minimum one female and one male climber.</li>
-                          <li>Minimum of one Novice climber.</li>
-                          <li>Maximum of one Intermediate climber.</li>
+                          <li>Each team can have a maximum of 4 people.</li>
+                          <li>Each team must have at least one male and one female climber each.</li>
+                          <li>Each team must have at least one Novice climber.</li>
+                          <li>Each team can only have a maximum of one Intermediate climber.</li>
                           <li>
                             National (Boulder/Lead) climbers from the senior team and Open climbers are not allowed to
                             join this category.
@@ -107,8 +103,7 @@ export default function RulesAndFormatsPage() {
                 <p className="text-sm font-medium text-yellow-800">
                   <strong>Important:</strong> Any competitor found to have registered and
                   competed in any category he/she is ineligible for will immediately be disqualified and moved to a
-                  higher category; each competitor may only sign up for one category. International climbers may contact
-                  the Organisers for clarification on category eligibility.
+                  higher category. International climbers may contact the Organisers for clarification on category eligibility.
                 </p>
               </div>
             </section>
@@ -122,44 +117,43 @@ export default function RulesAndFormatsPage() {
               </p>
 
               <div className="overflow-x-auto">
-                <table className="w-full border-collapse border border-border">
+                <table className="w-full table-fixed border-collapse border border-border">
+                  <colgroup>
+                    <col className="w-auto" />
+                    <col className="w-auto" />
+                    <col className="w-auto" />
+                    <col className="w-auto" />
+                  </colgroup>
                   <thead>
                     <tr className="bg-muted">
-                      <th className="border border-border p-3 text-left font-semibold">#</th>
                       <th className="border border-border p-3 text-left font-semibold">Category</th>
                       <th className="border border-border p-3 text-left font-semibold">Qualifying</th>
-                      <th className="border border-border p-3 text-left font-semibold">Semi Finals</th>
+                      <th className="border border-border p-3 text-left font-semibold">Semi-Finals</th>
                       <th className="border border-border p-3 text-left font-semibold">Finals</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border border-border p-3">1</td>
                       <td className="border border-border p-3 font-medium">Novice</td>
-                      <td className="border border-border p-3">Carnival</td>
-                      <td className="border border-border p-3">Carnival</td>
+                      <td className="border border-border p-3">Flash</td>
+                      <td className="border border-border p-3">Session</td>
                       <td className="border border-border p-3">Rotation</td>
                     </tr>
                     <tr className="bg-muted/50">
-                      <td className="border border-border p-3">2</td>
                       <td className="border border-border p-3 font-medium">Intermediate</td>
-                      <td className="border border-border p-3">Carnival</td>
-                      <td className="border border-border p-3">Carnival</td>
+                      <td className="border border-border p-3">Flash</td>
+                      <td className="border border-border p-3">Session</td>
                       <td className="border border-border p-3">Rotation</td>
                     </tr>
                     <tr>
-                      <td className="border border-border p-3">3</td>
                       <td className="border border-border p-3 font-medium">Open</td>
-                      <td className="border border-border p-3">Carnival</td>
-                      <td className="border border-border p-3">NA</td>
+                      <td className="border border-border p-3">Rotation</td>
+                      <td className="border border-border p-3">Rotation</td>
                       <td className="border border-border p-3">IFSC Finals (Concurrent)</td>
                     </tr>
                     <tr className="bg-muted/50">
-                      <td className="border border-border p-3">4</td>
                       <td className="border border-border p-3 font-medium">Team</td>
-                      <td className="border border-border p-3">Carnival</td>
-                      <td className="border border-border p-3">NA</td>
-                      <td className="border border-border p-3">NA</td>
+                      <td className="border border-border p-3 text-center" colSpan={3}>Team Rotation</td>
                     </tr>
                   </tbody>
                 </table>
@@ -171,56 +165,35 @@ export default function RulesAndFormatsPage() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-6">Carnival-style Format & Scoring</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-6">Flash Format & Scoring</h2>
 
-              <div className="space-y-4">
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <h3 className="font-semibold mb-2">Route Selection & Scoring</h3>
-                  <ul className="list-disc list-inside space-y-2 text-sm">
-                    <li>
-                      Various routes in the climbing gym shall be part of the BoulderActive set for each category and
-                      labelled accordingly.
-                    </li>
-                    <li>Each BoulderActive route shall be given a point allocation (weightage).</li>
-                    <li>
-                      While each competitor is free to attempt any BoulderActive route, scoring shall be determined by
-                      only the 6 routes which yield him/her the highest number of points.
-                    </li>
-                    <li>
-                      Only tops and zones shall count towards each competitor's score. Attempts will not be scored.
-                    </li>
-                  </ul>
-                </div>
+              <div className="bg-card border border-border rounded-lg p-6">
+                <ul className="list-disc list-inside space-y-3">
+                  <li>Each detail will have a minimum of 12 climbers and a maximum of 20 climbers.</li>
+                  <li>Climbers within each detail will enter the competition zone together at their designated time respectively.</li>
+                  <li>There will be a demonstration climb before the commencement of the competition.</li>
+                  <li>
+                    Participants will be given <strong>19 minutes</strong> to climb the routes.
+                  </li>
+                  <li>Participants may attempt the boulder problems in any order.</li>
+                  <li>Demonstration climbs will be posted on Instagram before the start of the competition.</li>
+                </ul>
+              </div>
+            </section>
 
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <h3 className="font-semibold mb-2">Point System</h3>
-                  <ul className="list-disc list-inside space-y-2 text-sm">
-                    <li>A successful top on a route provides the full number of points allocated to that route.</li>
-                    <li>Obtaining a zone provides 50% of the allocated points.</li>
-                    <li>
-                      Female climbers shall be awarded double points for tops and zones scored during the team event
-                      (Category 4).
-                    </li>
-                  </ul>
-                </div>
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold text-foreground mb-6">Session Format & Scoring</h2>
 
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <h3 className="font-semibold mb-2">Video Verification</h3>
-                  <ul className="list-disc list-inside space-y-2 text-sm">
-                    <li>
-                      Video verification of tops and zones must be provided in strict accordance with the Video
-                      Submission Guidelines.
-                    </li>
-                    <li>
-                      The Organisers retain the discretion to decline to award a competitor points for disputed tops and
-                      zones.
-                    </li>
-                    <li>
-                      There is no limit on the number of sessions competitors are allowed to use to attempt and film the
-                      BoulderActive routes, provided video submissions are sent in before the stipulated deadline.
-                    </li>
-                  </ul>
-                </div>
+              <div className="bg-card border border-border rounded-lg p-6">
+                <ul className="list-disc list-inside space-y-3">
+                  <li>Each detail will have a maximum of 20 climbers.</li>
+                  <li>Competitors will be isolated in the isolation zone before the commencement of the route setting for the event.</li>
+                  <li>Participants may attempt the boulder problems in any order</li>
+                  <li>
+                    Participants will be given <strong>30 minutes</strong> to climb the routes.
+                  </li>
+                  <li>There will be no demonstration climb.</li>
+                </ul>
               </div>
             </section>
 
@@ -282,6 +255,19 @@ export default function RulesAndFormatsPage() {
             </section>
 
             <section className="mb-12">
+              <h2 className="text-2xl font-bold text-foreground mb-6">Team Rotation Format & Scoring</h2>
+
+              <div className="bg-card border border-border rounded-lg p-6">
+                <ul className="list-disc list-inside space-y-3">
+                  <li>Each team will attempt all the boulder problems, in the prescribed order, with a total of <strong>5 minutes</strong> for all 4 members to attempt to top each problem.</li>
+                  <li>All members of the team must move together to each boulder problem.</li>
+                  <li>Each competitor is only allowed to clock a maximum of 1 Top and 1 Zone per route, regardless of the number of team members.</li>
+                  <li>Demonstration climbs will be posted on Instagram before the start of the competition.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section className="mb-12">
               <h2 className="text-2xl font-bold text-foreground mb-6">Qualification Rules</h2>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -289,15 +275,10 @@ export default function RulesAndFormatsPage() {
                   <h3 className="text-lg font-semibold mb-4 text-primary">Semi-Finals Qualification</h3>
                   <ul className="list-disc list-inside space-y-2 text-sm">
                     <li>
-                      The <strong>20 highest-scoring competitors</strong> from the Novice and Intermediate categories in
+                      The <strong>20 highest-scoring competitors</strong> in
                       their respective gender categories shall proceed to the semi-final rounds.
                     </li>
-                    <li>Semi-finals will be held in the week immediately after the qualifiers for each category.</li>
-                    <li>
-                      Semi-finalists shall climb the same routes as those being climbed by the qualifying category of
-                      the week.
-                    </li>
-                    <li>In the case of a tie, the tiebreaker mechanism shall be applied.</li>
+                    <li>If there are more than 20 participants who are eligible to proceed to the semi-finals, e.g. there are 3 participants in 20th place with the same scores, all will proceed to the semi-finals.</li>
                   </ul>
                 </div>
 
@@ -305,8 +286,7 @@ export default function RulesAndFormatsPage() {
                   <h3 className="text-lg font-semibold mb-4 text-primary">Finals Qualification</h3>
                   <ul className="list-disc list-inside space-y-2 text-sm">
                     <li>
-                      The <strong>6 competitors</strong> with the highest scores in the semi-finals (for Novice and
-                      Intermediate) or qualifiers (for the Open category) will proceed to the finals.
+                      The <strong>10 competitors</strong> (for Novice) and <strong>8 competitors</strong> (for Intermediate and Open) with the highest scores will proceed to the finals.
                     </li>
                     <li>
                       In the case of a tie, the tiebreaker mechanism shall be applied with respect to the number of
@@ -323,47 +303,8 @@ export default function RulesAndFormatsPage() {
                   applied by comparing the number of points allocated to each competitor's highest scoring top. The
                   tiebreaker operates in favour of the competitor whose highest scoring top yields the greatest number
                   of points. Should competitors' highest scoring top be the same, the next highest scoring top will be
-                  considered, and so on until there is a difference between the tied competitors.
+                  considered, and so on until there is a difference between the tied competitors. If competitors remain tied after considering all previous rounds, the tie will stand, and competitors will share the same rank.
                 </p>
-              </div>
-            </section>
-
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-6">Video Submission Guidelines</h2>
-
-              <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
-                <p className="text-sm text-red-800">
-                  <strong>Important:</strong> Due to the nature of BA25, route judges will not be physically present for
-                  route judging during carnival-style climbing formats; as such, competitors are to adhere strictly to
-                  the following video submission guidelines.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <h3 className="font-semibold mb-2">Video Start Requirements</h3>
-                  <p className="text-sm mb-2">
-                    At the start of each video submission, each competitor must stand on the climbing mat facing the
-                    camera such the following are clearly visible:
-                  </p>
-                  <ul className="list-disc list-inside space-y-1 text-sm ml-4">
-                    <li>The competitor's face</li>
-                    <li>The start tags of the boulder problem</li>
-                    <li>The boulder problem number</li>
-                  </ul>
-                </div>
-
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <h3 className="font-semibold mb-2">Video Recording Requirements</h3>
-                  <ul className="list-disc list-inside space-y-2 text-sm">
-                    <li>The entirety of the competitor's body must be visible throughout each video submission.</li>
-                    <li>
-                      In particular, a competitor's feet must be visible such that the Organisers can determine from the
-                      video submission if the competitor has adhered to the climbing rules.
-                    </li>
-                    <li>Any late video submissions will not be entertained.</li>
-                  </ul>
-                </div>
               </div>
             </section>
 
@@ -374,10 +315,11 @@ export default function RulesAndFormatsPage() {
                 <p>
                   These Guidelines are adapted from the IFSC Rules, which may be found online at:{" "}
                   <a
-                    href="https://cdn.ifsc-climbing.org/images/World_Competitions/IFSC-Rules_2019_v192_PUBLIC.pdf"
+                    href="https://images.ifsc-climbing.org/ifsc/image/private/t_q_good/prd/s3ihxcisocdpc8ty6mtg.pdf"
                     className="text-primary hover:underline"
+                    target="_blank"
                   >
-                    IFSC Rules 2019
+                    IFSC Rules 2025
                   </a>
                   . Terms used in these Guidelines are as defined in the IFSC Rules.
                 </p>
@@ -415,22 +357,15 @@ export default function RulesAndFormatsPage() {
                       tape with a colour different from the 4 tapes used to indicate the starting points.
                     </li>
                     <li>If there is one Zone hold, there will be one strip of tape.</li>
-                    <li>
-                      Two strips of tape on the same hold will be used to indicate that two hands will be needed to be
-                      on the zone hold to score the zone.
-                    </li>
-                    <li>
-                      If there are two zone holds, there will be one strip of tape on each of the holds. Competitors
-                      will need to have both hands on these two holds simultaneously during their attempt to score the
-                      zone.
-                    </li>
+                    <li>Zone will only be awarded when the participant has one hand on the hold and is in a controlled and stable position. This is up to the discretion of the route judge.</li>
+                    <li>If the climber skips the zone entirely (does not show that he is in control of the zone), and fails to top the route but progressed beyond the zone, he will not be awarded the zone.</li>
+                    <li>Participants can check with the route judge if they are unsure if they have been awarded the zone.</li>
                   </ul>
                 </div>
 
                 <div className="bg-card border border-border rounded-lg p-6">
                   <h3 className="text-lg font-semibold mb-4">Ending the Boulder Problem</h3>
                   <ul className="list-disc list-inside space-y-2 text-sm">
-                    <li>Special BoulderActive end tags will be used to indicate the Top hold(s).</li>
                     <li>
                       If there is one Top hold, there will be 1 strip of tape. Competitors will need to end the problem
                       with two hands securely on that hold.
@@ -569,7 +504,7 @@ export default function RulesAndFormatsPage() {
                   <li>
                     In the event that there is a need for communication in emergency situations, competitors are
                     required to alert the event officials. For the duration of the call, competitors are required to
-                    turn on their phones' loudspeaker.
+                    turn on their phones' loudspeakers.
                   </li>
                 </ul>
               </div>
@@ -619,7 +554,7 @@ export default function RulesAndFormatsPage() {
               </div>
             </section>
 
-            <section className="mb-12">
+            <section className="mb-8">
               <h2 className="text-2xl font-bold text-foreground mb-6">Rights of the Organisers</h2>
 
               <div className="bg-card border border-border rounded-lg p-6">
@@ -637,17 +572,15 @@ export default function RulesAndFormatsPage() {
               </div>
             </section>
 
-            <div className="text-center py-8">
+            <div className="text-center">
               <p className="text-sm text-muted-foreground">
                 For any questions or clarifications regarding these rules, please contact the NUS BoulderActive
-                organizing committee.
+                organising committee.
               </p>
             </div>
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   )
 }
