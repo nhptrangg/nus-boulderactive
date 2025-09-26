@@ -29,7 +29,6 @@ export const metadata: Metadata = {
   title: "NUS BoulderActive 2025",
   description:
     "Join the ultimate bouldering competition at NUS Singapore. Test your limits, conquer new heights, and be part of the climbing community.",
-  generator: "v0.app",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
