@@ -79,9 +79,11 @@ export function EventInfoSection() {
               <Button
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+                asChild
               >
                 <Link target="_blank" href="https://linktr.ee/boulderactive2022" rel="noopener noreferrer">
-                  SEE PREVIOUS BOULDERACTIVE PHOTOS
+                  PREVIOUS BA PHOTOS
+                  <ExternalLink className="h-4 w-4 ml-2" />
                 </Link>
               </Button>
             </CardContent>
@@ -137,11 +139,11 @@ export function EventInfoSection() {
                   </div>
                   <div className="flex justify-between items-center p-3 bg-accent/10 rounded-lg border border-accent/20">
                     <span className="font-semibold text-sm">Inter Semifinals</span>
-                    <span className="text-accent font-bold">13:00</span>
+                    <span className="text-accent font-bold">13:30</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-secondary/10 rounded-lg border border-secondary/20">
                     <span className="font-semibold text-sm">Team Event</span>
-                    <span className="text-secondary font-bold">15:50</span>
+                    <span className="text-secondary font-bold">18:30</span>
                   </div>
                 </div>
               </CardContent>
@@ -157,7 +159,7 @@ export function EventInfoSection() {
                 <div className="space-y-3">
                   <div className="flex justify-between items-center p-3 bg-accent/10 rounded-lg border border-accent/20">
                     <span className="font-semibold text-sm">Open Semifinals</span>
-                    <span className="text-accent font-bold">10:00</span>
+                    <span className="text-accent font-bold">11:00</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-secondary/20 rounded-lg border-2 border-secondary">
                     <span className="font-semibold text-sm">Novice Finals</span>
@@ -193,10 +195,27 @@ export function EventInfoSection() {
                 <CardContent className="text-sm space-y-2">
                   <ul className="list-disc flex flex-col gap-1">
                     <li>Demo climb available</li>
-                    <li>4 problems per competitor</li>
-                    <li>Same heat enters together</li>
+                    <li>6 problems per competitor</li>
+                    <li>Same detail enters together</li>
                     <li>Can view routes beforehand</li>
-                    <li>4 min per route + 4 min rest</li>
+                    <li>19 min per detail</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Session Format */}
+              <Card className="p-6">
+                <CardHeader className="text-center pb-4">
+                  <Info className="h-8 w-8 text-primary mx-auto mb-2" />
+                  <CardTitle className="text-lg">SESSION</CardTitle>
+                </CardHeader>
+                <CardContent className="text-sm space-y-2">
+                  <ul className="list-disc flex flex-col gap-1">
+                    <li>No demo climb</li>
+                    <li>5 problems per competitor</li>
+                    <li>Same detail enters together</li>
+                    <li>Cannot view routes beforehand</li>
+                    <li>30 min per detail</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -210,27 +229,11 @@ export function EventInfoSection() {
                 <CardContent className="text-sm space-y-2">
                   <ul className="list-disc flex flex-col gap-1">
                     <li>No demo climb</li>
-                    <li>Sent out one by one</li>
-                    <li>All attempt problem 1 first</li>
+                    <li>3 problems per competitor</li>
+                    <li>Sent out in gendered pairs</li>
+                    <li>To attempt routes in a set order</li>
                     <li>Cannot view routes beforehand</li>
-                    <li>4 min per route, back to isolation</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* IFSC Finals */}
-              <Card className="p-6">
-                <CardHeader className="text-center pb-4">
-                  <Info className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <CardTitle className="text-lg">IFSC FINALS</CardTitle>
-                </CardHeader>
-                <CardContent className="text-sm space-y-2">
-                  <ul className="list-disc flex flex-col gap-1">
-                    <li>No demo climb</li>
-                    <li>Sent out in reverse order</li>
-                    <li>Cannot view routes beforehand</li>
-                    <li>1 hour isolation</li>
-                    <li>Top 3 each gender awarded</li>
+                    <li>3.5 min per route</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -244,10 +247,12 @@ export function EventInfoSection() {
                 <CardContent className="text-sm space-y-2">
                   <ul className="list-disc flex flex-col gap-1">
                     <li>No demo climb</li>
+                    <li>4 problems per competitor</li>
                     <li>Sent out in reverse order</li>
+                    <li>To attempt routes in a set order</li>
                     <li>2-min observation period</li>
                     <li>1 hour isolation + observation</li>
-                    <li>Return to isolation before competing</li>
+                    <li>Return to isolation before competing and between each problem</li>
                   </ul>
                 </CardContent>
               </Card>

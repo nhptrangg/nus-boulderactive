@@ -85,13 +85,10 @@ export default function RulesAndFormatsPage() {
                       <td className="border border-border p-3">
                         <ul className="list-disc list-inside space-y-1 text-sm">
                           <li>Each team can have a maximum of 4 people.</li>
-                          <li>Each team must have at least one male and one female climber each.</li>
-                          <li>Each team must have at least one Novice climber.</li>
-                          <li>Each team can only have a maximum of one Intermediate climber.</li>
-                          <li>
-                            National (Boulder/Lead) climbers from the senior team and Open climbers are not allowed to
-                            join this category.
-                          </li>
+                          <li>No gender restriction per team.</li>
+                          <li>Teams can have a total of 6 points - 1 point for Novice, 2 points for Inter, 3 points for Open.</li>
+                          <li>Females have a score multiplier of <strong>1.25</strong>, while Open climbers have a score mulitplier of <strong>0.75</strong>.</li>
+                          <li>National (Boulder/Lead) climbers from the senior team can join this category.</li>
                         </ul>
                       </td>
                     </tr>
