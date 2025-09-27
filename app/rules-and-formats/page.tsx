@@ -44,7 +44,7 @@ function CompetitionCard({
 export default function RulesAndFormatsPage() {
   return (
     <div className="min-h-screen bg-background">
-      <main className="pt-20 pb-16">
+      <div className="pt-20 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Rules and Formats</h1>
@@ -772,7 +772,7 @@ export default function RulesAndFormatsPage() {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

@@ -9,9 +9,9 @@ export default function NotFound() {
           <h1 className="text-9xl md:text-[12rem] font-bold text-foreground/10 select-none">404</h1>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="flex items-center gap-4">
-              <div className="w-8 h-8 rounded-full climbing-hold"></div>
-              <div className="w-6 h-6 rounded-full climbing-hold"></div>
-              <div className="w-10 h-10 rounded-full climbing-hold"></div>
+              <div className="w-8 h-8 rounded-full climbing-hold"/>
+              <div className="w-6 h-6 rounded-full climbing-hold"/>
+              <div className="w-10 h-10 rounded-full climbing-hold"/>
             </div>
           </div>
         </div>

@@ -45,12 +45,6 @@ export function Navigation() {
                 HOME
               </ScrollButton>
               <ScrollButton
-                scrollToId="about"
-                className="text-foreground hover:text-primary transition-colors font-medium"
-              >
-                ABOUT
-              </ScrollButton>
-              <ScrollButton
                 scrollToId="information"
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
@@ -72,7 +66,7 @@ export function Navigation() {
                 href="/rules-and-formats"
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
-                RULES AND FORMATS
+                RULES
               </Link>
             </div>
           </div>
@@ -98,12 +92,6 @@ export function Navigation() {
               HOME
             </Link>
             <ScrollButton
-              scrollToId="about"
-              className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
-            >
-              ABOUT
-            </ScrollButton>
-            <ScrollButton
               scrollToId="information"
               className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
             >
@@ -125,7 +113,7 @@ export function Navigation() {
               href="/rules-and-formats"
               className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
             >
-              RULES AND FORMATS
+              RULES
             </Link>
           </div>
         </div>
