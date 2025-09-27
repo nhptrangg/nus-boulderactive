@@ -72,8 +72,8 @@ export function EventInfoSection() {
                 <p className="text-lg font-semibold mb-2">October 3-5, 2025</p>
                 <p className="text-muted-foreground mb-4">City Square Mall</p>
                 <p className="text-sm text-muted-foreground mb-6">
-                  Join us for Singapore&apos;s premier university climbing competition featuring multiple
-                  categories and formats across three exciting days.
+                  Join us for Singapore&apos;s premier university climbing competition featuring
+                  multiple categories and formats across three exciting days.
                 </p>
               </div>
             </CardContent>

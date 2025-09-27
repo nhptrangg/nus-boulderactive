@@ -1,5 +1,3 @@
-import { Navigation } from '@/components/navigation';
-
 function CompetitionCard({
   category,
   qualifying,
@@ -46,8 +44,6 @@ function CompetitionCard({
 export default function RulesAndFormatsPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       <main className="pt-20 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -449,10 +445,10 @@ export default function RulesAndFormatsPage() {
                   tiebreaker will be applied by comparing the number of points allocated to each
                   competitor&apos;s highest scoring top. The tiebreaker operates in favour of the
                   competitor whose highest scoring top yields the greatest number of points. Should
-                  competitors&apos; highest scoring top be the same, the next highest scoring top will be
-                  considered, and so on until there is a difference between the tied competitors. If
-                  competitors remain tied after considering all previous rounds, the tie will stand,
-                  and competitors will share the same rank.
+                  competitors&apos; highest scoring top be the same, the next highest scoring top
+                  will be considered, and so on until there is a difference between the tied
+                  competitors. If competitors remain tied after considering all previous rounds, the
+                  tie will stand, and competitors will share the same rank.
                 </p>
               </div>
             </section>
@@ -478,7 +474,10 @@ export default function RulesAndFormatsPage() {
                 <div className="bg-card border border-border rounded-lg p-6">
                   <h3 className="text-lg font-semibold mb-4">Starting the Boulder Problem</h3>
                   <ul className="list-disc list-inside space-y-2 text-sm">
-                    <li>A stable &apos;4-point&apos; starting position will be adopted for each problem.</li>
+                    <li>
+                      A stable &apos;4-point&apos; starting position will be adopted for each
+                      problem.
+                    </li>
                     <li>
                       The competitor must achieve a stable Controlled position with both hands and
                       both feet on the Starting Holds without Controlling or Using any other
@@ -493,8 +492,8 @@ export default function RulesAndFormatsPage() {
                       position is permitted.
                     </li>
                     <li>
-                      A competitor&apos;s attempt will be deemed to have started when every part of the
-                      competitor&apos;s body has left the ground.
+                      A competitor&apos;s attempt will be deemed to have started when every part of
+                      the competitor&apos;s body has left the ground.
                     </li>
                   </ul>
                 </div>

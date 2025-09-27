@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter, Orbitron, Montserrat } from 'next/font/google';
 import './globals.css';
 import { Footer } from '@/components/footer';
+import { Navigation } from '@/components/navigation';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -47,6 +48,7 @@ export default function RootLayout({
       className={`${inter.variable} ${orbitron.variable} ${montserrat.variable} antialiased`}
     >
       <body className="font-sans" suppressHydrationWarning>
+        <Navigation />
         {children}
         <Footer />
       </body>

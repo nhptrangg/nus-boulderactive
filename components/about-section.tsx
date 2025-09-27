@@ -24,8 +24,8 @@ export function AboutSection() {
             <p className="text-lg leading-relaxed">
               We believe in pushing boundaries and conquering fears. BoulderActive aims to become
               the destination for climbers seeking to test their limits, discover new techniques,
-              and connect with like-minded individuals in Singapore&apos;s growing climbing community,
-              establishing Singapore&apos;s climbing presence in sport climbing.
+              and connect with like-minded individuals in Singapore&apos;s growing climbing
+              community, establishing Singapore&apos;s climbing presence in sport climbing.
             </p>
           </div>
         </div>
