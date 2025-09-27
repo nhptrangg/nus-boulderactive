@@ -33,7 +33,7 @@ export function HeroSection() {
         </div>
 
         <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed px-2">
-          Push your limits. Conquer new heights. Join Singapore's premier bouldering competition.
+          Push your limits. Conquer new heights. Join Singapore&apos;s premier bouldering competition.
         </p>
 
         <CountdownTimer targetDate="2025-10-03T08:00:00+08:00" label="NUS BOULDERACTIVE STARTS" />

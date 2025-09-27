@@ -16,7 +16,7 @@ export function AboutSection() {
           <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-foreground">BEYOND LIMITS</h3>
           <div className="max-w-4xl mx-auto">
             <p className="text-lg leading-relaxed mb-6">
-              Founded in 2019, NUS BoulderActive has emerged as Singapore's premier bouldering
+              Founded in 2019, NUS BoulderActive has emerged as Singapore&apos;s premier bouldering
               competition, bringing together climbers of all skill levels in the spirit of
               challenge, friendship, and personal growth. Our event celebrates the dynamic culture
               of bouldering while fostering an inclusive community passionate about sport climbing.
@@ -24,8 +24,8 @@ export function AboutSection() {
             <p className="text-lg leading-relaxed">
               We believe in pushing boundaries and conquering fears. BoulderActive aims to become
               the destination for climbers seeking to test their limits, discover new techniques,
-              and connect with like-minded individuals in Singapore's growing climbing community,
-              establishing Singapore's climbing presence in sport climbing.
+              and connect with like-minded individuals in Singapore&apos;s growing climbing community,
+              establishing Singapore&apos;s climbing presence in sport climbing.
             </p>
           </div>
         </div>
@@ -37,7 +37,7 @@ export function AboutSection() {
               <Trophy className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">COMPETITIVE SPIRIT</h3>
               <p className="text-muted-foreground">
-                Challenge yourself against Singapore's best climbers in multiple categories
+                Challenge yourself against Singapore&apos;s best climbers in multiple categories
               </p>
             </CardContent>
           </Card>

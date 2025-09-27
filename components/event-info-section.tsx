@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Calendar, Clock, Users, Camera, Trophy, Info, ExternalLink } from 'lucide-react';
+import { Calendar, Camera, Info, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -72,7 +72,7 @@ export function EventInfoSection() {
                 <p className="text-lg font-semibold mb-2">October 3-5, 2025</p>
                 <p className="text-muted-foreground mb-4">City Square Mall</p>
                 <p className="text-sm text-muted-foreground mb-6">
-                  Join us for Singapore's premier university climbing competition featuring multiple
+                  Join us for Singapore&apos;s premier university climbing competition featuring multiple
                   categories and formats across three exciting days.
                 </p>
               </div>
@@ -88,7 +88,7 @@ export function EventInfoSection() {
             <CardContent className="text-center">
               <p className="text-muted-foreground mb-6">
                 Experience the excitement of competitive bouldering with climbers from across
-                Singapore's universities and climbing community.
+                Singapore&apos;s universities and climbing community.
               </p>
               <Button
                 variant="outline"

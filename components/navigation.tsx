@@ -91,12 +91,12 @@ export function Navigation() {
           }`}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border">
-            <a
+            <Link
               href="/"
               className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
             >
               HOME
-            </a>
+            </Link>
             <ScrollButton
               scrollToId="about"
               className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"

@@ -11,7 +11,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">NUS BOULDERACTIVE</h3>
             <p className="text-background/80 mb-4 max-w-md">
-              Singapore's premier bouldering competition. Join us in pushing limits, conquering
+              Singapore&apos;s premier bouldering competition. Join us in pushing limits, conquering
               fears, and building an inclusive climbing community.
             </p>
             <div className="flex space-x-4">

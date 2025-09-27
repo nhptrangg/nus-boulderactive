@@ -1,6 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { MapPin, Navigation, Phone, Mail, Instagram } from 'lucide-react';
-import { GoogleMapsEmbed } from '@next/third-parties/google';
+import { MapPin, Navigation, Mail, Instagram } from 'lucide-react';
 
 export function LocationSection() {
   return (
