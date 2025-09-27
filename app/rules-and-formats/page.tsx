@@ -1,5 +1,47 @@
 import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
+
+function CompetitionCard({
+  category,
+  qualifying,
+  semiFinals,
+  finals,
+  isTeam = false,
+}: {
+  category: string
+  qualifying: string
+  semiFinals: string
+  finals: string
+  isTeam?: boolean
+}) {
+  return (
+    <div className="border border-border rounded-lg p-4 bg-card">
+      <h3 className="font-semibold text-lg mb-3 text-card-foreground">{category}</h3>
+      {isTeam ? (
+        <div className="space-y-2">
+          <div className="flex justify-between items-center py-2">
+            <span className="text-sm font-medium text-muted-foreground">All Rounds:</span>
+            <span className="text-sm">{qualifying}</span>
+          </div>
+        </div>
+      ) : (
+        <div className="space-y-2">
+          <div className="flex justify-between items-center py-2 border-b border-border/50">
+            <span className="text-sm font-medium text-muted-foreground">Qualifying:</span>
+            <span className="text-sm">{qualifying}</span>
+          </div>
+          <div className="flex justify-between items-center py-2 border-b border-border/50">
+            <span className="text-sm font-medium text-muted-foreground">Semi-Finals:</span>
+            <span className="text-sm">{semiFinals}</span>
+          </div>
+          <div className="flex justify-between items-center py-2">
+            <span className="text-sm font-medium text-muted-foreground">Finals:</span>
+            <span className="text-sm">{finals}</span>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
 
 export default function RulesAndFormatsPage() {
   return (
@@ -109,51 +151,69 @@ export default function RulesAndFormatsPage() {
               <h2 className="text-2xl font-bold text-foreground mb-6">Competition Format and Score</h2>
 
               <p className="mb-6">
-                The competition formats to be used for the different categories in each round of competition are as
-                follows:
+                The competition formats to be used for the different categories in each round of competition are as follows:
               </p>
 
-              <div className="overflow-x-auto">
-                <table className="w-full table-fixed border-collapse border border-border">
-                  <colgroup>
-                    <col className="w-auto" />
-                    <col className="w-auto" />
-                    <col className="w-auto" />
-                    <col className="w-auto" />
-                  </colgroup>
-                  <thead>
-                    <tr className="bg-muted">
-                      <th className="border border-border p-3 text-left font-semibold">Category</th>
-                      <th className="border border-border p-3 text-left font-semibold">Qualifying</th>
-                      <th className="border border-border p-3 text-left font-semibold">Semi-Finals</th>
-                      <th className="border border-border p-3 text-left font-semibold">Finals</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="border border-border p-3 font-medium">Novice</td>
-                      <td className="border border-border p-3">Flash</td>
-                      <td className="border border-border p-3">Session</td>
-                      <td className="border border-border p-3">Rotation</td>
-                    </tr>
-                    <tr className="bg-muted/50">
-                      <td className="border border-border p-3 font-medium">Intermediate</td>
-                      <td className="border border-border p-3">Flash</td>
-                      <td className="border border-border p-3">Session</td>
-                      <td className="border border-border p-3">Rotation</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-border p-3 font-medium">Open</td>
-                      <td className="border border-border p-3">Rotation</td>
-                      <td className="border border-border p-3">Rotation</td>
-                      <td className="border border-border p-3">IFSC Finals (Concurrent)</td>
-                    </tr>
-                    <tr className="bg-muted/50">
-                      <td className="border border-border p-3 font-medium">Team</td>
-                      <td className="border border-border p-3 text-center" colSpan={3}>Team Rotation</td>
-                    </tr>
-                  </tbody>
-                </table>
+              {/* Mobile-first responsive table */}
+              <div className="space-y-4">
+                {/* Desktop table view - hidden on mobile */}
+                <div className="hidden md:block overflow-x-auto">
+                  <table className="w-full border-collapse border border-border">
+                    <thead>
+                      <tr className="bg-muted">
+                        <th className="border border-border p-3 text-left font-semibold">Category</th>
+                        <th className="border border-border p-3 text-left font-semibold">Qualifying</th>
+                        <th className="border border-border p-3 text-left font-semibold">Semi-Finals</th>
+                        <th className="border border-border p-3 text-left font-semibold">Finals</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="border border-border p-3 font-medium">Novice</td>
+                        <td className="border border-border p-3">Flash</td>
+                        <td className="border border-border p-3">Session</td>
+                        <td className="border border-border p-3">Rotation</td>
+                      </tr>
+                      <tr className="bg-muted/50">
+                        <td className="border border-border p-3 font-medium">Intermediate</td>
+                        <td className="border border-border p-3">Flash</td>
+                        <td className="border border-border p-3">Session</td>
+                        <td className="border border-border p-3">Rotation</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-border p-3 font-medium">Open</td>
+                        <td className="border border-border p-3">Rotation</td>
+                        <td className="border border-border p-3">Rotation</td>
+                        <td className="border border-border p-3">IFSC Finals (Concurrent)</td>
+                      </tr>
+                      <tr className="bg-muted/50">
+                        <td className="border border-border p-3 font-medium">Team</td>
+                        <td className="border border-border p-3 text-center" colSpan={3}>
+                          Team Rotation
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* Mobile card view - visible only on mobile */}
+                <div className="md:hidden space-y-4">
+                  <CompetitionCard category="Novice" qualifying="Flash" semiFinals="Session" finals="Rotation" />
+                  <CompetitionCard category="Intermediate" qualifying="Flash" semiFinals="Session" finals="Rotation" />
+                  <CompetitionCard
+                    category="Open"
+                    qualifying="Rotation"
+                    semiFinals="Rotation"
+                    finals="IFSC Finals (Concurrent)"
+                  />
+                  <CompetitionCard
+                    category="Team"
+                    qualifying="Team Rotation"
+                    semiFinals="Team Rotation"
+                    finals="Team Rotation"
+                    isTeam={true}
+                  />
+                </div>
               </div>
 
               <p className="text-sm text-muted-foreground mt-4">
