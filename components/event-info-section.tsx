@@ -1,8 +1,8 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Calendar, Clock, Users, Camera, Trophy, Info, ExternalLink } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Calendar, Clock, Users, Camera, Trophy, Info, ExternalLink } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export function EventInfoSection() {
   return (
@@ -15,11 +15,23 @@ export function EventInfoSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <Card className="p-6 border-2 border-primary bg-primary/5">
             <CardContent className="text-center pt-6">
-              <Image src="/climbbuddy.png" alt="ClimbBuddy Logo" height={40} width={40} className="h-8 w-8 text-primary mx-auto mb-4" />
+              <Image
+                src="/climbbuddy.png"
+                alt="ClimbBuddy Logo"
+                height={40}
+                width={40}
+                className="h-8 w-8 text-primary mx-auto mb-4"
+              />
               <h3 className="text-xl font-semibold mb-4 text-primary">ClimbBuddy Live Scores</h3>
-              <p className="text-muted-foreground mb-6">View live scores and rankings during the competition</p>
+              <p className="text-muted-foreground mb-6">
+                View live scores and rankings during the competition
+              </p>
               <Button asChild className="bg-primary hover:bg-primary/90">
-                <Link href="https://climbbuddy-5b7f6.web.app/" target="_blank" rel="noopener noreferrer">
+                <Link
+                  href="https://climbbuddy-5b7f6.web.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View Live Scores
                   <ExternalLink className="h-4 w-4 ml-2" />
                 </Link>
@@ -31,7 +43,9 @@ export function EventInfoSection() {
             <CardContent className="text-center pt-6">
               <Info className="h-8 w-8 text-secondary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4 text-secondary">Competition Rules</h3>
-              <p className="text-muted-foreground mb-6">View detailed rules, categories, and format information</p>
+              <p className="text-muted-foreground mb-6">
+                View detailed rules, categories, and format information
+              </p>
               <Button
                 asChild
                 variant="outline"
@@ -48,7 +62,7 @@ export function EventInfoSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Date & Venue */}
-          <Card className="pt-8">
+          <Card className="pt-6">
             <CardHeader className="text-center pb-2">
               <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
               <CardTitle className="text-2xl">Date & Venue</CardTitle>
@@ -58,30 +72,34 @@ export function EventInfoSection() {
                 <p className="text-lg font-semibold mb-2">October 3-5, 2025</p>
                 <p className="text-muted-foreground mb-4">City Square Mall</p>
                 <p className="text-sm text-muted-foreground mb-6">
-                  Join us for Singapore's premier university climbing competition featuring multiple categories and
-                  formats across three exciting days.
+                  Join us for Singapore's premier university climbing competition featuring multiple
+                  categories and formats across three exciting days.
                 </p>
               </div>
             </CardContent>
           </Card>
 
           {/* Event Photos */}
-          <Card className="p-8">
+          <Card className="p-6">
             <CardHeader className="text-center pb-2">
               <Camera className="h-12 w-12 text-primary mx-auto mb-4" />
               <CardTitle className="text-2xl">Event Photos</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-muted-foreground mb-6">
-                Experience the excitement of competitive bouldering with climbers from across Singapore's universities
-                and climbing community.
+                Experience the excitement of competitive bouldering with climbers from across
+                Singapore's universities and climbing community.
               </p>
               <Button
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
                 asChild
               >
-                <Link target="_blank" href="https://linktr.ee/boulderactive2022" rel="noopener noreferrer">
+                <Link
+                  target="_blank"
+                  href="https://linktr.ee/boulderactive2022"
+                  rel="noopener noreferrer"
+                >
                   PREVIOUS BA PHOTOS
                   <ExternalLink className="h-4 w-4 ml-2" />
                 </Link>
@@ -182,7 +200,9 @@ export function EventInfoSection() {
           <div className="mt-16">
             <div className="text-center mb-8">
               <h4 className="text-2xl font-bold mb-4 text-primary">COMPETITION FORMATS</h4>
-              <p className="text-muted-foreground">Understanding the different competition formats</p>
+              <p className="text-muted-foreground">
+                Understanding the different competition formats
+              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -261,5 +281,5 @@ export function EventInfoSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

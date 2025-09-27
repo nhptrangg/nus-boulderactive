@@ -1,19 +1,19 @@
-"use client"
+'use client';
 
-import { useEffect, useState } from "react"
+import { useEffect, useState } from 'react';
 
-const heroImages = ["/hero-1.jpg", "/hero-2.jpg", "/hero-3.png", "/hero-4.png", "/hero-5.jpg"]
+const heroImages = ['/hero-1.jpg', '/hero-2.jpg', '/hero-3.png', '/hero-4.png', '/hero-5.jpg'];
 
 export function HeroImageCarousel() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1))
-    }, 5000) // Change image every 5 seconds
+      setCurrentImageIndex(prevIndex => (prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1));
+    }, 5000); // Change image every 5 seconds
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="absolute inset-0 overflow-hidden">
@@ -21,19 +21,19 @@ export function HeroImageCarousel() {
         <div
           key={index}
           className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
-            index === currentImageIndex ? "opacity-100" : "opacity-0"
+            index === currentImageIndex ? 'opacity-100' : 'opacity-0'
           }`}
           style={{
             backgroundImage: `url('${image}')`,
             animation:
               index === currentImageIndex
-                ? "heroFloat 8s ease-in-out infinite, heroZoom 12s ease-in-out infinite"
-                : "none",
-            transform: "scale(1.05)",
+                ? 'heroFloat 8s ease-in-out infinite, heroZoom 12s ease-in-out infinite'
+                : 'none',
+            transform: 'scale(1.05)',
           }}
         />
       ))}
       <div className="absolute inset-0 bg-black/40"></div>
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -41,11 +41,11 @@
   --sidebar-accent-foreground: oklch(1 0 0); /* #ffffff - White text on sidebar accent */
   --sidebar-border: oklch(0.92 0.01 258); /* #e5e7eb - Light gray sidebar borders */
   --sidebar-ring: oklch(0.65 0.15 85 / 0.5); /* Golden sidebar focus ring */
-  --font-open-sans: "Open Sans", sans-serif;
-  --font-work-sans: "Work Sans", sans-serif;
-  --font-inter: "Inter", sans-serif;
-  --font-orbitron: "Orbitron", sans-serif;
-  --font-montserrat: "Montserrat", sans-serif;
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-work-sans: 'Work Sans', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-orbitron: 'Orbitron', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
 }
 
 .dark {

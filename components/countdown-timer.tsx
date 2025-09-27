@@ -1,10 +1,10 @@
-"use client"
+'use client';
 
-import { useState, useEffect } from "react"
+import { useState, useEffect } from 'react';
 
 interface CountdownTimerProps {
-  targetDate: string // ISO date string
-  label: string
+  targetDate: string; // ISO date string
+  label: string;
 }
 
 export function CountdownTimer({ targetDate, label }: CountdownTimerProps) {
@@ -13,12 +13,12 @@ export function CountdownTimer({ targetDate, label }: CountdownTimerProps) {
     hours: 0,
     minutes: 0,
     seconds: 0,
-  })
-  const [isExpired, setIsExpired] = useState(false)
+  });
+  const [isExpired, setIsExpired] = useState(false);
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const difference = +new Date(targetDate) - +new Date()
+      const difference = +new Date(targetDate) - +new Date();
 
       if (difference > 0) {
         setTimeLeft({
@@ -26,25 +26,25 @@ export function CountdownTimer({ targetDate, label }: CountdownTimerProps) {
           hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
           minutes: Math.floor((difference / 1000 / 60) % 60),
           seconds: Math.floor((difference / 1000) % 60),
-        })
-        setIsExpired(false)
+        });
+        setIsExpired(false);
       } else {
-        setIsExpired(true)
+        setIsExpired(true);
       }
-    }
+    };
 
-    calculateTimeLeft()
-    const timer = setInterval(calculateTimeLeft, 1000)
+    calculateTimeLeft();
+    const timer = setInterval(calculateTimeLeft, 1000);
 
-    return () => clearInterval(timer)
-  }, [targetDate])
+    return () => clearInterval(timer);
+  }, [targetDate]);
 
   if (isExpired) {
     return (
       <div className="bg-accent/20 backdrop-blur-sm border border-accent/30 rounded-lg p-4 mb-6">
         <p className="text-accent font-semibold text-lg">NUS BoulderActive has started!</p>
       </div>
-    )
+    );
   }
 
   return (
@@ -69,5 +69,5 @@ export function CountdownTimer({ targetDate, label }: CountdownTimerProps) {
         </div>
       </div>
     </div>
-  )
+  );
 }

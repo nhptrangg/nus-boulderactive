@@ -1,6 +1,6 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { MapPin, Navigation, Phone, Mail, Instagram } from "lucide-react"
-import { GoogleMapsEmbed } from '@next/third-parties/google'
+import { Card, CardContent } from '@/components/ui/card';
+import { MapPin, Navigation, Phone, Mail, Instagram } from 'lucide-react';
+import { GoogleMapsEmbed } from '@next/third-parties/google';
 
 export function LocationSection() {
   return (
@@ -13,7 +13,16 @@ export function LocationSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Map Placeholder */}
           <div className="w-full">
-            <iframe width="100%" height="500" frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0} src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=City%20Square%20Mall+(NUS%20BoulderActive)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" /></div>
+            <iframe
+              width="100%"
+              height="500"
+              frameBorder="0"
+              scrolling="no"
+              marginHeight={0}
+              marginWidth={0}
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=City%20Square%20Mall+(NUS%20BoulderActive)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            />
+          </div>
 
           {/* Location Details */}
           <div>
@@ -40,19 +49,18 @@ export function LocationSection() {
                   <div>
                     <h4 className="font-semibold mb-1">Getting There:</h4>
                     <div className="flex flex-col gap-2">
-                    <p className="text-muted-foreground">
-                      Take MRT to Farrer Park Station (North-East Line)
-                    </p>
-                    <p className="text-muted-foreground">
-                      <span className="font-semibold">Bus stops:</span>
-                      <br />
-                      Before Tai Hoe Hotel, 07231 - 21, 125, 130
-                      <br />
-                      Outside Sri Srinivasa Perumal Temple, 07211 - 21, 23, 64, 65, 66, 67, 125, 130, 139, 141, 147, 857, NR6
-                    </p>
-                    <p className="text-muted-foreground">
-                      Parking available
-                    </p>
+                      <p className="text-muted-foreground">
+                        Take MRT to Farrer Park Station (North-East Line)
+                      </p>
+                      <p className="text-muted-foreground">
+                        <span className="font-semibold">Bus stops:</span>
+                        <br />
+                        Before Tai Hoe Hotel, 07231 - 21, 125, 130
+                        <br />
+                        Outside Sri Srinivasa Perumal Temple, 07211 - 21, 23, 64, 65, 66, 67, 125,
+                        130, 139, 141, 147, 857, NR6
+                      </p>
+                      <p className="text-muted-foreground">Parking available</p>
                     </div>
                   </div>
                 </div>
@@ -80,5 +88,5 @@ export function LocationSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
