@@ -24,6 +24,8 @@ const NOTIFICATIONS = [
         );
       },
     },
+    showFrom: new Date('2025-09-01'),
+    showUntil: new Date('2025-10-02'),
   },
 ];
 
@@ -34,49 +36,48 @@ export function NotificationManager() {
   const hasShownNotifications = useRef(false);
 
   useEffect(() => {
+    const now = new Date();
+
     // Only show notifications once per page load
     if (hasShownNotifications.current) return;
 
     // Filter out already dismissed notifications
     const notificationsToShow = NOTIFICATIONS.filter(
-      notification => !dismissedNotifications.includes(notification.id),
+      notification =>
+        !dismissedNotifications.includes(notification.id) &&
+        notification.showFrom < now &&
+        notification.showUntil > now,
     );
 
     // Show each notification that hasn't been dismissed
     notificationsToShow.forEach(notification => {
       const IconComponent = notification.icon;
 
-      toast(notification.title, {
-        id: notification.id,
-        duration: Infinity,
-        position: 'top-right',
-        className: 'group',
-        description: notification.message,
-        icon: <IconComponent className="w-5 h-5" />,
-        action: notification.action
-          ? {
-              label: (
-                <div className="flex items-center gap-2">
-                  <notification.action.icon className="w-4 h-4" />
-                  {notification.action.label}
-                </div>
-              ),
-              onClick: notification.action.onClick,
-            }
-          : undefined,
-        onDismiss: () => {
-          setDismissedNotifications(notification.id);
-        },
-        closeButton: true,
-        cancel: {
-          label: 'Dismiss',
-          onClick: () => {
-            // Handle manual dismissal
+      setTimeout(() =>
+        toast(notification.title, {
+          id: notification.id,
+          duration: Infinity,
+          position: 'top-right',
+          className: 'group',
+          description: notification.message,
+          icon: <IconComponent className="w-5 h-5" />,
+          action: notification.action
+            ? {
+                label: (
+                  <div className="flex items-center gap-2">
+                    <notification.action.icon className="w-4 h-4" />
+                    {notification.action.label}
+                  </div>
+                ),
+                onClick: notification.action.onClick,
+              }
+            : undefined,
+          onDismiss: () => {
             setDismissedNotifications(notification.id);
-            toast.dismiss(notification.id);
           },
-        },
-      });
+          closeButton: true,
+        }),
+      );
     });
 
     hasShownNotifications.current = true;

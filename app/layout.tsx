@@ -50,9 +50,9 @@ export default function RootLayout({
     >
       <body className="font-sans" suppressHydrationWarning>
         <Navigation />
-        <Toaster />
         <main>{children}</main>
         <Footer />
+        <Toaster />
       </body>
     </html>
   );
