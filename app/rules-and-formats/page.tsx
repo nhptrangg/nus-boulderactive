@@ -363,10 +363,6 @@ export default function RulesAndFormatsPage() {
                     The next competitor shall commence climbing only 4 minutes after the previous
                     competitor has started climbing.
                   </li>
-                  <li>
-                    Once all competitors have completed their attempts on a boulder, they shall move
-                    on to the next boulder as a group.
-                  </li>
                   <li>Scoring shall be based on the IFSC format of tops, attempts and zones.</li>
                   <li>
                     Manpower from the BoulderActive committee will be present (route judges and key
@@ -411,12 +407,12 @@ export default function RulesAndFormatsPage() {
                   </h3>
                   <ul className="list-disc list-inside space-y-2 text-sm">
                     <li>
-                      The <strong>20 highest-scoring competitors</strong> in their respective gender
+                      The <strong>24 highest-scoring competitors</strong> in their respective gender
                       categories shall proceed to the semi-final rounds.
                     </li>
                     <li>
-                      If there are more than 20 participants who are eligible to proceed to the
-                      semi-finals, e.g. there are 3 participants in 20th place with the same scores,
+                      If there are more than 24 participants who are eligible to proceed to the
+                      semi-finals, e.g. there are 3 participants in 24th place with the same scores,
                       all will proceed to the semi-finals.
                     </li>
                   </ul>
@@ -508,10 +504,10 @@ export default function RulesAndFormatsPage() {
                     </li>
                     <li>If there is one Zone hold, there will be one strip of tape.</li>
                     <li>
-                      Zone will only be awarded when the participant has one hand on the hold and is
-                      in a controlled and stable position. This is up to the discretion of the route
+                      Zone will only be awarded when the hold is used in an "Establishing Movement". This is up to the discretion of the route
                       judge.
                     </li>
+                    <li>An "Establishing Movement" will be considered successful when a climber has a clear grasp of a hold and is able to make a movement consolidating their position with that hold (e.g. transferring their weight onto that hold).</li>
                     <li>
                       If the climber skips the zone entirely (does not show that he is in control of
                       the zone), and fails to top the route but progressed beyond the zone, he will
