@@ -67,15 +67,23 @@ export function EventInfoSection() {
               <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
               <CardTitle className="text-2xl">Date & Venue</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="text-center">
-                <p className="text-lg font-semibold mb-2">October 3-5, 2025</p>
-                <p className="text-muted-foreground mb-4">City Square Mall</p>
-                <p className="text-sm text-muted-foreground mb-6">
-                  Join us for Singapore&apos;s premier university climbing competition featuring
-                  multiple categories and formats across three exciting days.
-                </p>
-              </div>
+            <CardContent className="space-y-4 text-center">
+              <p className="text-lg font-semibold mb-2">October 3-5, 2025</p>
+              <p className="text-muted-foreground mb-4">City Square Mall</p>
+              <Button
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+                asChild
+              >
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/spreadsheets/d/1ISyPNq3u-ZbwfH5rZbVwW6YdRgm2bbDTl6tPAQ2Xjj8"
+                  rel="noopener noreferrer"
+                >
+                  SEE DETAILED SCHEDULE
+                  <ExternalLink className="h-4 w-4 ml-2" />
+                </Link>
+              </Button>
             </CardContent>
           </Card>
 
