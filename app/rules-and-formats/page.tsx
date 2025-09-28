@@ -504,10 +504,10 @@ export default function RulesAndFormatsPage() {
                     </li>
                     <li>If there is one Zone hold, there will be one strip of tape.</li>
                     <li>
-                      Zone will only be awarded when the hold is used in an "Establishing Movement". This is up to the discretion of the route
+                      Zone will only be awarded when the hold is used in an &quot;Establishing Movement&quot;. This is up to the discretion of the route
                       judge.
                     </li>
-                    <li>An "Establishing Movement" will be considered successful when a climber has a clear grasp of a hold and is able to make a movement consolidating their position with that hold (e.g. transferring their weight onto that hold).</li>
+                    <li>An &quot;Establishing Movement&quot; will be considered successful when a climber has a clear grasp of a hold and is able to make a movement consolidating their position with that hold (e.g. transferring their weight onto that hold).</li>
                     <li>
                       If the climber skips the zone entirely (does not show that he is in control of
                       the zone), and fails to top the route but progressed beyond the zone, he will
