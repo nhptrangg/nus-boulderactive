@@ -323,11 +323,11 @@ export default function RulesAndFormatsPage() {
                     list.
                   </li>
                   <li>
-                    Competitors shall be given <strong>3.5 minutes</strong> to attempt each route,
+                    Competitors shall be given <strong>4 minutes</strong> to attempt each route,
                     with no additional time to be given to complete climbing.
                   </li>
                   <li>
-                    Competitors shall be given a mandatory rest time of <strong>3.5 minutes</strong>{' '}
+                    Competitors shall be given a mandatory rest time of <strong>4 minutes</strong>{' '}
                     between routes, during which no observation of other routes shall be allowed.
                   </li>
                 </ul>
@@ -336,7 +336,7 @@ export default function RulesAndFormatsPage() {
 
             <section className="mb-12">
               <h2 className="text-2xl font-bold text-foreground mb-6">
-                IFSC Finals (Concurrent) Format & Scoring
+                IFSC Concurrent Format & Scoring
               </h2>
 
               <div className="bg-card border border-border rounded-lg p-6">
@@ -348,7 +348,7 @@ export default function RulesAndFormatsPage() {
                     prohibited from using any recording equipment.
                   </li>
                   <li>
-                    Competitors shall attempt all 3 routes in the order set out in the official
+                    Competitors shall attempt all 4 routes in the order set out in the official
                     start list.
                   </li>
                   <li>
