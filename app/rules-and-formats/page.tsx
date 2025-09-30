@@ -213,9 +213,9 @@ export default function RulesAndFormatsPage() {
                       </tr>
                       <tr>
                         <td className="border border-border p-3 font-medium">Open</td>
+                        <td className="border border-border p-3">Session</td>
                         <td className="border border-border p-3">Rotation</td>
-                        <td className="border border-border p-3">Rotation</td>
-                        <td className="border border-border p-3">IFSC Finals (Concurrent)</td>
+                        <td className="border border-border p-3">IFSC Concurrent</td>
                       </tr>
                       <tr className="bg-muted/50">
                         <td className="border border-border p-3 font-medium">Team</td>
@@ -243,9 +243,9 @@ export default function RulesAndFormatsPage() {
                   />
                   <CompetitionCard
                     category="Open"
-                    qualifying="Rotation"
+                    qualifying="Session"
                     semiFinals="Rotation"
-                    finals="IFSC Finals (Concurrent)"
+                    finals="IFSC Concurrent"
                   />
                   <CompetitionCard
                     category="Team"
@@ -408,10 +408,11 @@ export default function RulesAndFormatsPage() {
                   <ul className="list-disc list-inside space-y-2 text-sm">
                     <li>
                       The <strong>24 highest-scoring competitors</strong> in their respective gender
-                      categories shall proceed to the semi-final rounds.
+                      categories of the Intermediate/Open category and the <strong> 20 highest-scoring
+                      competitors </strong> in each gender category of the Novice category shall proceed to the semi-final rounds.
                     </li>
                     <li>
-                      If there are more than 24 participants who are eligible to proceed to the
+                      If there are more than 24 participants (or 20 participants) who are eligible to proceed to the
                       semi-finals, e.g. there are 3 participants in 24th place with the same scores,
                       all will proceed to the semi-finals.
                     </li>
